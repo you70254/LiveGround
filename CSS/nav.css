@@ -1,0 +1,57 @@
+/* <!-- nav --> */
+#LG_NAV {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: "Inter", "Noto Sans TC", sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-logo img {
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #a89ec0;
+    transition: color 0.3s;
+    background-color: #3d2070;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav-links .nav-login {
+    background-color: #8b5cf6;
+    color: #14121f;
+}
+
+.nav-links .nav-login:hover {
+    background-color: #14121f;
+    color: #8b5cf6;
+    border: 2px solid #8b5cf6;
+    padding: 8px;
+}
+
+.nav-links a:hover {
+    background-color: #6d3fd4;
+    color: #1e1a2e;
+}
+
+.nav-line {
+    width: 1px;
+    height: 20px;
+    border: 1px solid #6d3fd4;
+}

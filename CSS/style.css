@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1040, #2d1a50, #0e0e16);
+}
+
+:root {
+    /* 背景 */
+    --bg-page: #0a0a0f;
+    --bg-section: #0e0e16;
+    --bg-card: #14121f;
+    --bg-hover: #1e1a2e;
+    /* 主色 */
+    --purple-main: #8b5cf6;
+    --purple-dark: #6d3fd4;
+    --purple-sub: #3d2070;
+    --purple-tint: #1e1040;
+    /* 特殊用色 */
+    --accent-pink: #e879f9;
+    --info-blue: #38bdf8;
+    --danger-red: #f43f5e;
+    /* 字體顏色 */
+    --text-primary: #f0eeff;
+    --text-secondary: #a89ec0;
+    --text-muted: #5a5070;
+    /* 字體 */
+    --font-space: 'Space Grotesk', 'Noto Sans TC', sans-serif;
+    --font-inter: 'Inter', 'Noto Sans TC', sans-serif;
+}
+
+body.theme-light {
+    /* 背景 */
+    --bg-page: #f5f0ff;
+    --bg-section: #ede6ff;
+    --bg-card: #ffffff;
+    --bg-hover: #e8e0fa;
+    /* 字體顏色 */
+    --text-primary: #1a1030;
+    --text-secondary: #4a3a6a;
+    --text-muted: #9080b0;
+    --border-color: #c4aaff;
+}

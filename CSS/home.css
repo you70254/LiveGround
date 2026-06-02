@@ -1,0 +1,349 @@
+#LG_HERO {
+    width: 95%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+}
+
+.hero_background {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    /* background-image: url(../img/danny-howe-bn-D2bCvpik-unsplash.jpg); */
+    /* background-image: url(../img/rachel-coyne-U7HLzMO4SIY-unsplash.jpg); */
+    background-image: url(../img/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* <!-- hero --> */
+.hero-content {
+    position: absolute;
+    bottom: 5%;
+    left: 20px;
+    color: var(--text-primary);
+    font-family: var(--font-inter);
+}
+
+.hero-logo {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.hero-sub {
+    font-size: 40px;
+}
+
+/* .hero-slogan {
+    font-size: 20px;
+} */
+
+/* <!-- LG_ABOUT --> */
+#LG_ABOUT {
+    width: 95%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    /* align-items: stretch; */
+    font-family: var(--font-inter);
+}
+
+.about-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 50px;
+    gap: 20px;
+    align-self: flex-start;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+
+.about-right {
+    position: relative;
+    width: 50%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    font-size: 16px;
+}
+
+.about-left>h2 {
+    font-family: var(--font-space);
+    font-size: 28px;
+    color: var(--text-primary);
+}
+
+.more {
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    color: var(--text-secondary);
+}
+
+.more::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    display: block;
+    background-color: var(--accent-pink);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-more:hover::after {
+    width: calc(100% + 8px);
+}
+
+.arrow {
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.more:hover .arrow {
+    transform: translateX(8px);
+}
+
+.about-card {
+    height: 200px;
+    border: 1px solid var(--purple-sub);
+    border-radius: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--bg-card);
+    color: var(--text-secondary);
+}
+
+.about-card:hover {
+    border: 1px solid var(--accent-pink);
+}
+
+/* <!-- LG_LATEST --> */
+#LG_LATEST {
+    width: 95%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-family: var(--font-inter);
+}
+
+.latest-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--text-primary);
+    margin-block: 10px;
+}
+
+.latest-header>h2 {
+    font-family: var(--font-space);
+    font-size: 28px;
+}
+
+.larest-title {
+    align-self: center;
+    font-size: 14px;
+}
+
+.larest-title:hover::after {
+    width: 100%;
+}
+
+.latest-track-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#left-button {
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 90;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+#right-button {
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 90;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+#left-button:hover,
+#right-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#left-button,
+#right-button,
+.latest-track-wrapper::before,
+.latest-track-wrapper::after {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.latest-track-wrapper.is-start:hover::before {
+    opacity: 0;
+}
+
+.latest-track-wrapper.is-end:hover::after {
+    opacity: 0;
+}
+
+.latest-track-wrapper:hover #left-button,
+.latest-track-wrapper:hover #right-button,
+.latest-track-wrapper:hover::before,
+.latest-track-wrapper:hover::after {
+    opacity: 1;
+}
+
+.latest-track-wrapper::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 48px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, var(--purple-sub), transparent);
+    transition: opacity 0.3s;
+}
+
+.latest-track-wrapper::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 48px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to left, var(--purple-sub), transparent);
+    transition: opacity 0.3s;
+}
+
+#latest-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+
+.artist-card {
+    height: 300px;
+    border: 1px solid var(--purple-sub);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    margin: 2px;
+}
+
+.artist-img {
+    height: 300px;
+}
+
+.artist-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 20px 0px;
+    font-family: var(--font-space);
+    font-size: 16px;
+}
+
+.artist-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.artist-card:hover .artist-hover {
+    opacity: 1;
+}
+
+.artist-card:hover {
+    border: 2px solid var(--accent-pink);
+}
+
+.live-more {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--purple-sub);
+}
+
+.live-item {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+}
+
+.live-date {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+.live-venue {
+    align-self: center;
+    padding-left: 10px;
+    border-left: 2px solid var(--purple-sub);
+}
