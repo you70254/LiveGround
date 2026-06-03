@@ -1,5 +1,376 @@
-#artist-hero {
-    width: 95%;
-    margin: auto;
-    background-color: var(--bg-page);
-}
+    section:not(#artist-hero) {
+        margin: auto;
+        position: relative;
+        padding-inline: 30px;
+        padding-block: 10px;
+        border: 1px solid red;
+    }
+
+    /* < !-- hero --> */
+    #artist-hero {
+        width: 95%;
+        margin: auto;
+        position: relative;
+    }
+
+    .artist-hero-content {
+        background-color: var(--bg-page);
+        margin-top: 70px;
+        border: 1px solid red;
+        padding: 30px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .artist-tag {
+        display: flex;
+        gap: 8px;
+    }
+
+    .artist-tag>span {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding-inline: 5px;
+    }
+
+    h1 {
+        margin-block: 10px;
+    }
+
+    .artist-badges {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .artist-badges>span {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding-inline: 5px;
+    }
+
+    /* <!-- main content --> */
+
+    #artist-sidebar {
+        width: 30%;
+    }
+
+    #artist-content {
+        width: 55%;
+    }
+
+    #ad {
+        width: 15%;
+    }
+
+    #artist-main {
+        width: 95%;
+        margin: auto;
+        position: relative;
+        background-color: var(--bg-page);
+        display: flex;
+        padding-bottom: 30px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    /* <!-- 藝人詳細頁 --> */
+
+    /* <!-- tab nav --> */
+    #artist-tabs {
+        border: 1px solid red;
+        padding-inline: 20px;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    #artist-tabs>a {
+        padding-inline: 20px;
+        padding-block: 10px;
+    }
+
+    /* < !-- 巡演資訊 --> */
+
+    .section-heading-row {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .tour-meta {
+        padding-block: 5px;
+    }
+
+    .date-item>.row {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .row>.date {
+        border: 1px solid red;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .row>.venue {
+        border: 1px solid red;
+        width: 300px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .row>.right {
+        border: 1px solid red;
+        width: 80px;
+        height: 60px;
+        display: flex;
+        text-align: center;
+        align-self: center;
+        justify-content: space-between;
+    }
+
+    .row>.right>.badge-ticket {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding-inline: 5px;
+        align-self: center;
+    }
+
+    .row>.right>.chevron {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding-inline: 5px;
+        align-self: center;
+    }
+
+    .date-item>.date-detail {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 30px;
+        display: flex;
+    }
+
+    .detail-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    /* <!-- 入場規定 --> */
+    .rules-section {
+        margin-block: 10px;
+    }
+
+    .rules-section span {
+        border: 1px solid red;
+        border-radius: 20px;
+        padding-inline: 5px;
+    }
+
+    /* <!-- 粉絲留言 --> */
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        margin-block: 10px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .comment {
+        display: flex;
+        gap: 12px;
+
+    }
+
+    .comment:not(:last-child) {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 16px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        flex-shrink: 0;
+        background-color: darkorchid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comment-body {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .comment-meta {
+        display: flex;
+        gap: 8px;
+        align-items: baseline;
+    }
+
+    .comment-time {
+        font-size: 12px;
+    }
+
+    .comment-text {
+        line-height: 1.6;
+    }
+
+    .comment-likes img {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* <!-- 應援活動 --> */
+
+    .cheer-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+    }
+
+    .cheer-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background-color: rebeccapurple;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cheer-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .cheer-title {
+        font-weight: 500;
+    }
+
+    .cheer-detail {
+        font-size: 13px;
+    }
+
+    .cheer-status {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 20px;
+        flex-shrink: 0;
+        border: 1px solid red;
+    }
+
+    /* <!-- 周邊 --> */
+
+    button {
+        background: none;
+        border: none;
+    }
+
+    .merch-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .merch-row {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    .merch-row:not(:last-child) {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .merch-name {
+        flex: 1;
+    }
+
+    .merch-price {
+        margin-right: 16px;
+    }
+
+    .merch-status {
+        font-size: 12px;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-weight: 500;
+    }
+
+    .status-sold {
+        background-color: rgba(180, 40, 40, 0.3);
+        color: #ff6b6b;
+    }
+
+    .status-avail {
+        background-color: rgba(40, 120, 40, 0.3);
+        color: #69db7c;
+    }
+
+    /* <!-- 票券 --> */
+
+    .ticket-post {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+    }
+
+    .ticket-post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ticket-type {
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .ticket-meta {
+        display: flex;
+        gap: 12px;
+        font-size: 13px;
+        align-items: baseline;
+        color: var(--text-secondary);
+    }
+
+    .ticket-contact {
+        font-size: 13px;
+        color: var(--accent-purple);
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 4px 12px;
+        border-radius: 20px;
+    }
+
+    .badge-offer {
+        background-color: rgba(100, 80, 200, 0.25);
+        color: var(--accent-purple);
+    }
+
+    .badge-want {
+        background-color: rgba(40, 120, 40, 0.25);
+        color: #69db7c;
+    }

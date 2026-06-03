@@ -54,3 +54,41 @@ body.theme-light {
     --text-muted: #9080b0;
     --border-color: #c4aaff;
 }
+
+.more {
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    color: var(--text-secondary);
+    margin-top: 5px;
+}
+
+.more:hover::after {
+    width: 100%;
+}
+
+.more::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    display: block;
+    background-color: var(--accent-pink);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-more:hover::after,
+.off-more:hover::after {
+    width: calc(100% + 8px);
+}
+
+.arrow {
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.more:hover .arrow {
+    transform: translateX(8px);
+}
