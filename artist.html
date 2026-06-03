@@ -35,13 +35,14 @@
         <!-- <div class="artist-hero-bg"></div> -->
         <!-- <div class="artist-hero-overlay"></div> -->
         <div class="artist-hero-content">
-            <p class="artist-tag"><span class="genre">流行搖滾</span><span class="country">日本</span></p>
+            <p class="badge-group"><span class="badge badge--genre">流行搖滾</span><span
+                    class="badge badge--country">日本</span></p>
             <h1 class="artist-name">ONE OK ROCK</h1>
             <p class="artist-tour-name">2024 PREMONITION WORLD TOUR</p>
-            <div class="artist-badges">
-                <span class="badge badge-ticket">已完售</span>
-                <span class="badge badge-cheer">應援集中串</span>
-                <span class="badge badge-merch">周邊回報中</span>
+            <div class="badge-group">
+                <span class="badge badge--sold">已完售</span>
+                <span class="badge badge--cheer">應援集中串</span>
+                <span class="badge badge--merch">周邊回報中</span>
             </div>
         </div>
     </section>
@@ -51,7 +52,7 @@
     <!-- 藝人詳細頁 -->
     <main id="artist-main">
         <aside id="artist-sidebar">
-            <h2 class=".section-heading">巡演場次</h2>
+            <h2 class="section-heading">巡演場次</h2>
             <P class="tour-meta">2024.09 – 2024.10 · 8 場</P>
         </aside>
         <div id="artist-content">
@@ -63,19 +64,19 @@
                 <a class="tab-item" href="">售票區</a>
             </nav>
             <!-- 巡演資訊 -->
-            <section id="section-info" class="section-card">
-                <h2 class="section-heading">巡演場次</h2>
-                <div class="section-heading-row">
-                    <P class="tour-meta">2024.09 – 2024.10 · 8 場</P>
+            <section id="section-info">
+                <div class="section-header">
+                    <h2 class="section-header__title">巡演場次</h2>
                     <a class="more off-more" href="ticket-btn">官方售票頁<span class="arrow">→</span></a>
                 </div>
-                <div class="dates-list">
+                <P class="tour-meta">2024.09 – 2024.10 · 8 場</P>
+                <div class="list">
                     <div class="date-item">
                         <div class="row">
                             <p class="date">2026<br>04.25<br>(六)</p>
                             <p class="venue">臺北大巨蛋 Taipei Dome 台灣 · 台北</p>
                             <div class="right">
-                                <span class="badge-ticket">售票中</span>
+                                <span class="badge badge--on-sale">售票中</span>
                                 <span class="chevron">^</span>
                             </div>
                         </div>
@@ -105,7 +106,7 @@
                             <p class="date">2026<br>04.25<br>六</p>
                             <p class="venue">臺北大巨蛋 Taipei Dome 台灣 · 台北</p>
                             <div class="right">
-                                <span class="badge-ticket">售票中</span>
+                                <span class="badge badge--on-sale">售票中</span>
                                 <span class="chevron">^</span>
                             </div>
                         </div>
@@ -135,10 +136,10 @@
                 <!-- 入場規定 -->
                 <div class="rules-section">
                     <h3 class="rules-title">入場規定</h3>
-                    <div class="rules-tags">
-                        <span class="rule-tag">本人確認必須</span>
-                        <span class="rule-tag">攝影禁止</span>
-                        <span class="rule-tag">錄音錄影禁止</span>
+                    <div class="badge-rules">
+                        <span class="badge badge--rule">本人確認必須</span>
+                        <span class="badge badge--rule">攝影禁止</span>
+                        <span class="badge badge--rule">錄音錄影禁止</span>
                     </div>
                 </div>
             </section>
@@ -146,10 +147,10 @@
             <!-- 粉絲留言 -->
             <section id="section-comments">
                 <div class="section-header">
-                    <h2>粉絲留言版</h2>
-                    <a class="more comments-more" href="">查看全部</a>
+                    <h2 class="section-header__title">粉絲留言版</h2>
+                    <a class="more" href="">查看全部</a>
                 </div>
-                <div class="list comments-list">
+                <div class="list">
                     <div class="comment">
                         <div class="avatar">圖</div>
                         <div class="comment-body">
@@ -180,85 +181,87 @@
             <!-- 應援活動 -->
             <section id="section-cheering">
                 <div class="section-header">
-                    <h2>應援活動區</h2>
-                    <a class="more comments-more"" href="">查看全部</a>
+                    <h2 class="section-header__title">應援活動區</h2>
+                    <a class="more" href="">查看全部</a>
                 </div>
-                <div class=" list cheer-list">
-                        <div class="cheer-card">
-                            <div class="cheer-icon">
-                                圖片
-                            </div>
-                            <div class="cheer-info">
-                                <p class="cheer-title">台灣粉絲應援小組 — 免費明信片發放</p>
-                                <p class="cheer-detail">場館門口 17:00 開始 · 主辦：@tw_oor_fans</p>
-                            </div>
-                            <span class="cheer-status">確認中</span>
+                <div class=" list">
+                    <div class="cheer-card">
+                        <div class="cheer-icon">
+                            圖片
                         </div>
-                        <div class="cheer-card">
-                            <div class="cheer-icon">
-                                圖片
-                            </div>
-                            <div class="cheer-info">
-                                <p class="cheer-title">台灣粉絲應援小組 — 免費明信片發放</p>
-                                <p class="cheer-detail">場館門口 17:00 開始 · 主辦：@tw_oor_fans</p>
-                            </div>
-                            <span class="cheer-status">確認中</span>
+                        <div class="cheer-info">
+                            <p class="cheer-title">台灣粉絲應援小組 — 免費明信片發放</p>
+                            <p class="cheer-detail">場館門口 17:00 開始 · 主辦：@tw_oor_fans</p>
                         </div>
+                    </div>
+                    <div class="cheer-card">
+                        <div class="cheer-icon">
+                            圖片
+                        </div>
+                        <div class="cheer-info">
+                            <p class="cheer-title">台灣粉絲應援小組 — 免費明信片發放</p>
+                            <p class="cheer-detail">場館門口 17:00 開始 · 主辦：@tw_oor_fans</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- 周邊 -->
-            <section id="section-merch" class="section-card">
+            <section id="section-merch">
                 <div class="section-header">
-                    <h3 class="subsection-title">周邊即時回報</h3>
+                    <h3 class="section-header__title">周邊即時回報</h3>
                     <button class="add-report-btn">＋ 新增回報</button>
                 </div>
                 <p class="merch-updated">最後更新：18:42（場內回報）</p>
 
-                <div class="merch-list">
+                <div class="list">
                     <div class="merch-row">
                         <span class="merch-name">Tour T 恤A（M / L）</span>
                         <span class="merch-price">¥4,500</span>
-                        <span class="merch-status status-sold">完售</span>
+                        <span class="badge badge--sold">完售</span>
                     </div>
                     <div class="merch-row">
                         <span class="merch-name">Tour T 恤B（XL）</span>
                         <span class="merch-price">¥4,500</span>
-                        <span class="merch-status status-avail">有貨</span>
+                        <span class="badge badge--on-sale">有貨</span>
                     </div>
             </section>
             <!-- 票券 -->
-            <section id="section-ticket" class="section-card">
+            <section id="section-ticket">
                 <div class="section-header" style="margin-top: 1.5rem;">
-                    <h3 class="subsection-title">票券轉讓公告</h3>
-                    <a class="more ticket-more"" href="">查看全部</a>
+                    <h3 class="section-header__title">票券轉讓公告</h3>
+                    <a class="more" href="">查看全部</a>
                 </div>
-                <div class=" list ticket-posts">
-                        <div class="ticket-post">
-                            <div class="ticket-post-header">
-                                <span class="ticket-type">🎫 讓票 — 指定席 1 張</span>
-                                <span class="badge badge-offer">讓票</span>
-                            </div>
-                            <div class="ticket-meta">
-                                <span>NT$6,800</span>
-                                <span>A 區指定座</span>
-                                <span>2 小時前</span>
-                            </div>
-                            <p class="ticket-contact">聯絡：@xxx_fan · Twitter 私訊洽詢</p>
+                <div class="warn-banner">
+                    <p>⚠️ 本站嚴禁超過原價販售。發現黃牛票請</p>
+                    <a href="#" class="warn-link">向文化部檢舉</a>
+                </div>
+                <div class=" list">
+                    <div class="ticket-post">
+                        <div class="ticket-post-header">
+                            <span class="ticket-type">🎫 讓票 — 指定席 1 張</span>
+                            <span class="badge badge--offer">讓票</span>
                         </div>
+                        <div class="ticket-meta">
+                            <span>NT$6,800</span>
+                            <span>A 區指定座</span>
+                            <span>2 小時前</span>
+                        </div>
+                        <p class="ticket-contact">聯絡：@xxx_fan · Twitter 私訊洽詢</p>
+                    </div>
 
-                        <div class="ticket-post">
-                            <div class="ticket-post-header">
-                                <span class="ticket-type">🔍 徵票 — 任意區 1 張</span>
-                                <span class="badge badge-want">徵票</span>
-                            </div>
-                            <div class="ticket-meta">
-                                <span>原價接受</span>
-                                <span>任意區皆可</span>
-                                <span>5 小時前</span>
-                            </div>
-                            <p class="ticket-contact">聯絡：@yuki_tw · Twitter 私訊洽詢</p>
+                    <div class="ticket-post">
+                        <div class="ticket-post-header">
+                            <span class="ticket-type">🔍 徵票 — 任意區 1 張</span>
+                            <span class="badge badge--want">徵票</span>
                         </div>
+                        <div class="ticket-meta">
+                            <span>原價接受</span>
+                            <span>任意區皆可</span>
+                            <span>5 小時前</span>
+                        </div>
+                        <p class="ticket-contact">聯絡：@yuki_tw · Twitter 私訊洽詢</p>
+                    </div>
                 </div>
             </section>
         </div>

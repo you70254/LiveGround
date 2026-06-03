@@ -6,6 +6,13 @@
         border: 1px solid red;
     }
 
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-block: 10px;
+    }
+
     /* < !-- hero --> */
     #artist-hero {
         width: 95%;
@@ -21,31 +28,8 @@
         border-radius: 20px 20px 0 0;
     }
 
-    .artist-tag {
-        display: flex;
-        gap: 8px;
-    }
-
-    .artist-tag>span {
-        border: 1px solid red;
-        border-radius: 20px;
-        padding-inline: 5px;
-    }
-
     h1 {
         margin-block: 10px;
-    }
-
-    .artist-badges {
-        display: flex;
-        gap: 8px;
-        margin-top: 10px;
-    }
-
-    .artist-badges>span {
-        border: 1px solid red;
-        border-radius: 20px;
-        padding-inline: 5px;
     }
 
     /* <!-- main content --> */
@@ -89,13 +73,6 @@
     }
 
     /* < !-- 巡演資訊 --> */
-
-    .section-heading-row {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-
     .tour-meta {
         padding-block: 5px;
     }
@@ -126,19 +103,12 @@
     .row>.right {
         border: 1px solid red;
         width: 80px;
-        height: 60px;
         display: flex;
         text-align: center;
         align-self: center;
         justify-content: space-between;
     }
 
-    .row>.right>.badge-ticket {
-        border: 1px solid red;
-        border-radius: 20px;
-        padding-inline: 5px;
-        align-self: center;
-    }
 
     .row>.right>.chevron {
         border: 1px solid red;
@@ -165,25 +135,7 @@
         margin-block: 10px;
     }
 
-    .rules-section span {
-        border: 1px solid red;
-        border-radius: 20px;
-        padding-inline: 5px;
-    }
-
     /* <!-- 粉絲留言 --> */
-
-    .section-header {
-        display: flex;
-        justify-content: space-between;
-        margin-block: 10px;
-    }
-
-    .list {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
 
     .comment {
         display: flex;
@@ -269,24 +221,11 @@
         font-size: 13px;
     }
 
-    .cheer-status {
-        font-size: 12px;
-        padding: 4px 10px;
-        border-radius: 20px;
-        flex-shrink: 0;
-        border: 1px solid red;
-    }
-
     /* <!-- 周邊 --> */
 
     button {
         background: none;
         border: none;
-    }
-
-    .merch-list {
-        display: flex;
-        flex-direction: column;
     }
 
     .merch-row {
@@ -305,23 +244,6 @@
 
     .merch-price {
         margin-right: 16px;
-    }
-
-    .merch-status {
-        font-size: 12px;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-weight: 500;
-    }
-
-    .status-sold {
-        background-color: rgba(180, 40, 40, 0.3);
-        color: #ff6b6b;
-    }
-
-    .status-avail {
-        background-color: rgba(40, 120, 40, 0.3);
-        color: #69db7c;
     }
 
     /* <!-- 票券 --> */
@@ -359,18 +281,6 @@
         color: var(--accent-purple);
     }
 
-    .badge {
-        font-size: 12px;
-        padding: 4px 12px;
-        border-radius: 20px;
-    }
-
-    .badge-offer {
-        background-color: rgba(100, 80, 200, 0.25);
-        color: var(--accent-purple);
-    }
-
-    .badge-want {
-        background-color: rgba(40, 120, 40, 0.25);
-        color: #69db7c;
+    .warn-banner {
+        display: flex;
     }

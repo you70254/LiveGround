@@ -92,3 +92,32 @@ body.theme-light {
 .more:hover .arrow {
     transform: translateX(8px);
 }
+
+.badge {
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid red;
+    padding-inline: 5px;
+}
+
+.badge--sold {
+    background-color: rgba(180, 40, 40, 0.3);
+    color: #ff6b6b;
+}
+
+.badge--on-sale {
+    background-color: rgba(40, 120, 40, 0.3);
+    color: #69db7c;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.badge-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
