@@ -202,8 +202,8 @@
         padding-block: 8px;
         position: relative;
         color: var(--text-secondary);
-        font-size: 13px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .tab-item::after {
@@ -252,7 +252,7 @@
     }
 
 
-    .card>.right>.chevron {
+    .chevron {
         /* border: 1px solid red; */
         width: 20px;
         height: 20px;
@@ -260,17 +260,44 @@
         align-self: center;
     }
 
-    .date-item>.date-detail {
+    .date-detail {
         /* border: 1px solid red; */
         border-radius: 20px;
         padding: 30px;
         display: flex;
+        border: 1px solid var(--border-color);
+        background-color: var(--bg-hover);
+        border-top: none;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .card:hover {
+        background-color: var(--bg-hover);
     }
 
     .detail-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
+    }
+
+    /* 預設（收合）*/
+    .date-item summary {
+        border-radius: 12px;
+    }
+
+    /* 展開後 */
+    .date-item details[open] .card {
+        background-color: var(--bg-hover);
+        border-radius: 12px 12px 0 0;
+    }
+
+    .date-item[open] summary {
+        border-radius: 12px 12px 0 0;
+    }
+
+    details[open] .chevron {
+        transform: rotate(180deg);
     }
 
     /* <!-- 入場規定 --> */
@@ -293,12 +320,9 @@
     .avatar {
         width: 40px;
         height: 40px;
-        border-radius: 20px;
+        border-radius: 50%;
         flex-shrink: 0;
-        border: 1px solid var(--purple-main);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border: 2px solid var(--purple-main);
         object-fit: cover;
     }
 
@@ -326,14 +350,11 @@
     /* <!-- 應援活動 --> */
 
     .cheer-icon {
-        width: 44px;
-        height: 44px;
+        width: 60px;
+        height: 60px;
         border-radius: 10px;
-        border: 1px solid var(--purple-main);
+        border: 2px solid var(--purple-main);
         flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         object-fit: cover;
     }
 
