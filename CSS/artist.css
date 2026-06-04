@@ -3,14 +3,23 @@
         position: relative;
         padding-inline: 30px;
         padding-block: 10px;
-        border: 1px solid red;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        margin-block: 15px;
+        background-color: var(--bg-section);
+        color: var(--text-primary);
     }
 
     .section-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-block: 10px;
+        margin-block: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
     }
 
     /* < !-- hero --> */
@@ -18,91 +27,224 @@
         width: 95%;
         margin: auto;
         position: relative;
+        height: 40vh;
     }
 
     .artist-hero-content {
-        background-color: var(--bg-page);
         margin-top: 70px;
-        border: 1px solid red;
         padding: 30px;
-        border-radius: 20px 20px 0 0;
+        position: relative;
+        z-index: 1;
+        height: 200px;
     }
 
-    h1 {
+    .artist-hero-bg {
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background-image: url(../img/03-2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .artist-hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: linear-gradient(to top,
+                rgba(10, 5, 20, 0.85) 0%,
+                rgba(10, 5, 20, 0.4) 50%,
+                rgba(10, 5, 20, 0.1) 100%);
+    }
+
+    .artist-name,
+    .artist-tour-name {
         margin-block: 10px;
+        color: var(--bg-page);
+        font-family: var(--font-space);
     }
 
     /* <!-- main content --> */
-
-    #artist-sidebar {
-        width: 30%;
-    }
-
-    #artist-content {
-        width: 55%;
-    }
-
-    #ad {
-        width: 15%;
-    }
 
     #artist-main {
         width: 95%;
         margin: auto;
         position: relative;
         background-color: var(--bg-page);
-        display: flex;
-        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 25% 60% 15%;
+        padding-bottom: 15px;
         border-radius: 0 0 20px 20px;
     }
 
     /* <!-- 藝人詳細頁 --> */
+    aside {
+        width: 98%;
+        margin-inline: auto;
+    }
+
+    .sidebar-artist-img img {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .sidebar-artist-info,
+    .sidebar-stat {
+        text-align: center;
+        color: var(--text-primary)
+    }
+
+    .sidebar-stats {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .sidebar-tour-info {
+        border-bottom: 1px solid var(--border-color);
+        color: var(--text-secondary);
+    }
+
+    .sidebar-stat-value {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .sidebar-stat-label {
+        font-size: 12px;
+        color: var(--text-muted);
+    }
+
+    .sidebar-link>span {
+        padding-inline: 15px;
+    }
+
+    .sidebar-link {
+        display: flex;
+        justify-content: space-between;
+        padding-block: 8px;
+        border-bottom: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 13px;
+    }
+
+    .sidebar-link:hover {
+        color: var(--purple-main);
+    }
+
+    /* < !-- 相關藝人 --> */
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-muted);
+        margin-bottom: 8px;
+    }
+
+    .related-list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .related-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 8px;
+    }
+
+    .related-item:hover {
+        background-color: var(--bg-hover);
+    }
+
+    .related-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .related-name {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-secondary);
+    }
+
+    .related-genre {
+        font-size: 11px;
+        color: var(--text-muted);
+    }
 
     /* <!-- tab nav --> */
     #artist-tabs {
-        border: 1px solid red;
-        padding-inline: 20px;
+        padding: 3px 20px;
         display: flex;
-        margin: auto;
         justify-content: space-around;
+        border-bottom: 1px solid var(--purple-main);
     }
 
-    #artist-tabs>a {
+    .tab-item {
         padding-inline: 20px;
-        padding-block: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-block: 8px;
+        position: relative;
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .tab-item::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: calc(50% - 15px);
+        width: 30px;
+        height: 2px;
+        background-color: var(--text-secondary);
+        transition: width 0.3s, left 0.3s;
+    }
+
+    .tab-item:hover::after {
+        color: var(--purple-main);
+        width: 100%;
+        left: 0;
     }
 
     /* < !-- 巡演資訊 --> */
     .tour-meta {
         padding-block: 5px;
+        margin-top: -15px;
     }
 
-    .date-item>.row {
-        border: 1px solid red;
-        border-radius: 20px;
-        padding: 30px;
+    .card>p {
+        /* border: 1px solid red; */
+        text-align: center;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        text-align: left;
     }
 
-    .row>.date {
-        border: 1px solid red;
-        width: 60px;
-        height: 60px;
-        text-align: center;
+    .card>p>span {
+        font-size: 12px;
+        font-weight: 200;
     }
 
-    .row>.venue {
-        border: 1px solid red;
-        width: 300px;
-        text-align: center;
-        align-self: center;
-    }
-
-    .row>.right {
-        border: 1px solid red;
-        width: 80px;
+    .card>.right {
+        /* border: 1px solid red; */
+        width: 100px;
         display: flex;
         text-align: center;
         align-self: center;
@@ -110,15 +252,16 @@
     }
 
 
-    .row>.right>.chevron {
-        border: 1px solid red;
-        border-radius: 20px;
-        padding-inline: 5px;
+    .card>.right>.chevron {
+        /* border: 1px solid red; */
+        width: 20px;
+        height: 20px;
+        display: block;
         align-self: center;
     }
 
     .date-item>.date-detail {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-radius: 20px;
         padding: 30px;
         display: flex;
@@ -140,12 +283,11 @@
     .comment {
         display: flex;
         gap: 12px;
-
     }
 
     .comment:not(:last-child) {
         border-bottom: 1px solid var(--border-color);
-        padding-bottom: 16px;
+        padding-bottom: 10px;
     }
 
     .avatar {
@@ -153,10 +295,11 @@
         height: 40px;
         border-radius: 20px;
         flex-shrink: 0;
-        background-color: darkorchid;
+        border: 1px solid var(--purple-main);
         display: flex;
         align-items: center;
         justify-content: center;
+        object-fit: cover;
     }
 
     .comment-body {
@@ -175,10 +318,6 @@
         font-size: 12px;
     }
 
-    .comment-text {
-        line-height: 1.6;
-    }
-
     .comment-likes img {
         width: 15px;
         height: 15px;
@@ -186,24 +325,16 @@
 
     /* <!-- 應援活動 --> */
 
-    .cheer-card {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 16px;
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-    }
-
     .cheer-icon {
         width: 44px;
         height: 44px;
         border-radius: 10px;
-        background-color: rebeccapurple;
+        border: 1px solid var(--purple-main);
         flex-shrink: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        object-fit: cover;
     }
 
     .cheer-info {
@@ -222,16 +353,30 @@
     }
 
     /* <!-- 周邊 --> */
+    #section-merch>.list {
+        gap: 0;
+    }
 
     button {
         background: none;
         border: none;
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 3px 7px;
+        background-color: var(--badge-blue-bg);
+        color: var(--badge-blue-text);
+        border: 1px solid var(--badge-blue-text);
+    }
+
+    button:hover {
+        background-color: #d5e3fc;
     }
 
     .merch-row {
         display: flex;
         align-items: center;
         padding: 12px 0;
+        gap: 12px;
     }
 
     .merch-row:not(:last-child) {
@@ -247,14 +392,11 @@
     }
 
     /* <!-- 票券 --> */
-
-    .ticket-post {
-        display: flex;
+    #section-ticket .card {
         flex-direction: column;
-        gap: 6px;
-        padding: 16px;
-        border: 1px solid var(--border-color);
-        border-radius: 10px;
+        align-items: normal;
+        justify-content: normal;
+        gap: 5px;
     }
 
     .ticket-post-header {
@@ -283,4 +425,23 @@
 
     .warn-banner {
         display: flex;
+        font-size: 14px;
+        padding: 3px 7px;
+        margin: 10px;
+    }
+
+    .warn-link {
+        position: relative;
+    }
+
+    .warn-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        /* left: calc(50% - 15px); */
+        width: 100%;
+        height: 1px;
+        background-color: var(--badge-orange-text);
     }

@@ -6,7 +6,7 @@ let wrapper = document.querySelector('.latest-track-wrapper');
 let position = 0;
 let cardWidth = 246;
 let cards = document.querySelectorAll('.artist-card');
-let maxScroll = (cards.length - 1) * cardWidth;
+let maxScroll = track.scrollWidth - wrapper.offsetWidth;
 
 checkBtn();
 

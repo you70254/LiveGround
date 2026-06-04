@@ -16,6 +16,7 @@ a {
 
 body {
     background: linear-gradient(135deg, #1e1040, #2d1a50, #0e0e16);
+    font-family: var(--font-inter);
 }
 
 :root {
@@ -53,6 +54,20 @@ body.theme-light {
     --text-secondary: #4a3a6a;
     --text-muted: #9080b0;
     --border-color: #c4aaff;
+
+    /* badge 用色 */
+    --badge-red-bg: #fde8e8;
+    --badge-red-text: #9b2c2c;
+    --badge-green-bg: #e6f4d7;
+    --badge-green-text: #2d6a0a;
+    --badge-purple-bg: #f0e6ff;
+    --badge-purple-text: #5b21b6;
+    --badge-orange-bg: #fef9e7;
+    --badge-orange-text: #92400e;
+    --badge-blue-bg: #e8f0fe;
+    --badge-blue-text: #1a4a9b;
+    --badge-grey-bg: #f3f4f6;
+    --badge-grey-text: #4b5563;
 }
 
 .more {
@@ -89,31 +104,63 @@ body.theme-light {
     display: inline-block;
 }
 
-.more:hover .arrow {
+.more:hover .arrow,
+.warn-link:hover .arrow {
     transform: translateX(8px);
 }
 
 .badge {
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 20px;
-    border: 1px solid red;
-    padding-inline: 5px;
+    padding: 3px 7px;
 }
 
-.badge--sold {
-    background-color: rgba(180, 40, 40, 0.3);
-    color: #ff6b6b;
+.badge--sold,
+.badge--rule {
+    background-color: var(--badge-red-bg);
+    color: var(--badge-red-text);
+    border: 1px solid var(--badge-red-text);
 }
 
 .badge--on-sale {
-    background-color: rgba(40, 120, 40, 0.3);
-    color: #69db7c;
+    background-color: var(--badge-green-bg);
+    color: var(--badge-green-text);
+    border: 1px solid var(--badge-green-text);
+}
+
+.badge--genre,
+.badge--cheer,
+.badge--want {
+    background-color: var(--badge-purple-bg);
+    color: var(--badge-purple-text);
+    border: 1px solid var(--badge-purple-text);
+}
+
+.badge--country,
+.badge--merch,
+.badge--offer,
+.badge--limited,
+.warn-banner {
+    background-color: var(--badge-orange-bg);
+    color: var(--badge-orange-text);
+    border: 1px solid var(--badge-orange-text);
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    border-radius: 12px;
 }
 
 .badge-group {
