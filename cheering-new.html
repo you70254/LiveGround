@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>發布應援活動 — LiveGround</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/cheering-new.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-light">
+    <!-- NAV -->
+    <nav id="LG_NAV">
+        <a href="index.html" class="nav-logo">
+            <img src="img/logo-LiveGround.svg">
+        </a>
+        <div class="nav-links">
+            <a href="lives.html">LIVES</a>
+            <a href="#">MAP</a>
+            <a href="cheering.html">CHEERING</a>
+            <div class="nav-line"></div>
+            <a href="#" class="nav-login">登入</a>
+        </div>
+    </nav>
+    <!-- HERO（深色） -->
+    <section id="cheering-new-hero">
+        <div class="cheering-new-hero-bg"></div>
+        <div class="cheering-new-hero-overlay"></div>
+        <h1>發布應援活動</h1>
+        <div class="hero-breadcrumb">
+            <p class="hero-sub">填寫完成後，活動將公開顯示在應援列表與演唱會詳細頁</p>
+            <a class="back" href="cheering.html"><span class="arrow">←</span>返回應援列表</a>
+        </div>
+    </section>
+    <main id="cheering-new-main">
+        <!-- 基本資訊 -->
+        <section class="form-section">
+            <h2 class="form-section__title"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                </svg>
+                基本資訊</h2>
+            <div class="form-field form-field--full">
+                <label for="cheer-title">活動標題<span class="req">*</span></label>
+                <input type="text" id="cheer-title" name="cheer-title" placeholder="例：台灣粉絲應援小組 — 免費明信片發放" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="cheer-artist">藝人<span class="req">*</span></label>
+                    <select id="cheer-artist" name="cheer-artist">
+                        <option value="" selected>請選擇藝人</option>
+                        <option value="OOR">ONE OK ROCK</option>
+                        <option value="SPBV">SUPER BEAVER</option>
+                        <option value="LAS">Fear,and Loathing in Las Vegas</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="cheer-tour">巡迴場次<span class="req">*</span></label>
+                    <select id="cheer-tour" name="cheer-tour">
+                        <option value="" selected>請先選擇藝人</option>
+                        <option value="oor-2026">2026 PREMONITION WORLD TOUR</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-field form-field--full">
+                <label>預計參加日期<span class="req">*</span></label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="cheer-dates" value="2026-04-25">
+                        2026.04.25（六）</label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="cheer-dates" value="2026-04-26">
+                        2026.04.26（日）</label>
+                </div>
+            </div>
+        </section>
+        <!--  封面圖片 -->
+        <section class="form-section">
+            <h2 class="form-section__title"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg>
+                封面圖片</h2>
+            <label class="upload-area" for="cheer-cover">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+                </svg>
+                <span class="upload-text">點擊上傳封面圖（1 張，建議 1 : 1）</span>
+                <input type="file" id="cheer-cover" name="cheer-cover" accept="image/*" hidden>
+            </label>
+        </section>
+        <!--  活動資訊 -->
+        <section class="form-section">
+            <h2 class="form-section__title"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                </svg>
+                活動資訊</h2>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="cheer-start">發放 / 開始時間</label>
+                    <input type="time" id="cheer-start" name="cheer-start">
+                </div>
+                <div class="form-field">
+                    <label>預計結束時間</label>
+                    <div class="end-time-row">
+                        <input type="time" id="cheer-end" name="cheer-end">
+                        <span class="end-time-or">或</span>
+                        <label class="radio-pill">
+                            <input type="radio" name="cheer-end-type" value="until-gone">
+                            發完為止
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="cheer-location">集合地點</label>
+                    <input type="text" id="cheer-location" name="cheer-location" placeholder="例：台北大巨蛋 A 門前廣場">
+                </div>
+                <div class="form-field">
+                    <label for="cheer-capacity">開放報名總數</label>
+                    <input type="number" id="cheer-capacity" name="cheer-capacity" placeholder="留空代表不限人數" min="1">
+                </div>
+            </div>
+
+            <div class="form-field form-field--full">
+                <label for="cheer-desc">活動說明<span class="req">*</span></label>
+                <textarea id="cheer-desc" name="cheer-desc" rows="8"
+                    placeholder="請說明活動內容，例如：發放數量、是否接受 AI 製品、純發放或交換、領取注意事項等..." required></textarea>
+                <span class="char-count">0 / 1000 字</span>
+            </div>
+        </section>
+        <!-- 送出區 -->
+        <div class="form-actions">
+            <a href="cheering.html" class="btn-cancel">取消發布</a>
+            <button type="submit" class="btn-submit">發布活動</button>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer id="LG_FOOTER">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <p class="footer-logo">LiveGround</p>
+                    <p class="footer-slogan">Live until the last song ends.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="">twitter</a>
+                    <a href="">instagram</a>
+                    <a href="">discord</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="">關於本站</a>
+                <a href="">使用條款</a>
+                <a href="">隱私政策</a>
+                <a href="">聯絡我們</a>
+            </div>
+            <p class="footer-copyright">© 2025 LiveGround. For fans, by fans.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

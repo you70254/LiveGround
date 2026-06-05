@@ -1,0 +1,221 @@
+    .form-section__title {
+        color: var(--text-primary);
+        font-weight: 500;
+    }
+
+    .form-section__title>svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* <!-- HERO（深色） --> */
+    #cheering-new-hero {
+        width: 95%;
+        margin: auto;
+        position: relative;
+        margin-top: 70px;
+        height: 40vh;
+        background-color: var(--bg-page);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 20px 20px 0 0;
+        z-index: 0;
+        color: var(--bg-page);
+        font-family: var(--font-space);
+    }
+
+    .cheering-new-hero-bg {
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background-image: url(../img/03-2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .cheering-new-hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(to top,
+                rgba(10, 5, 20, 0.85) 0%,
+                rgba(10, 5, 20, 0.4) 50%,
+                rgba(10, 5, 20, 0.1) 100%);
+    }
+
+
+    .hero-breadcrumb {
+        display: flex;
+        justify-content: space-between;
+        margin-block: 20px;
+    }
+
+    #cheering-new-main {
+        width: 95%;
+        margin: auto;
+        position: relative;
+        background-color: var(--bg-page);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-block: 30px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    /* <!-- 基本資訊 --> */
+
+    .form-section {
+        width: 85%;
+        margin: auto;
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="time"],
+    select,
+    textarea {
+        width: 100%;
+        background-color: var(--bg-section);
+        color: var(--text-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 8px 12px;
+        margin-top: 5px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: 2px solid var(--purple-main);
+        outline-offset: 2px;
+        background-color: var(--bg-section);
+    }
+
+    input[type="checkbox"] {
+        accent-color: var(--purple-main);
+    }
+
+    .checkbox-item {
+        background-color: var(--bg-section);
+        color: var(--text-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 2px 8px;
+        margin-right: 10px;
+    }
+
+    .req {
+        color: red;
+    }
+
+    /* <!--  封面圖片 --> */
+    .upload-area {
+        width: 100%;
+        height: 200px;
+        background-color: var(--bg-section);
+        color: var(--text-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed var(--border-color);
+        cursor: pointer;
+    }
+
+    .upload-area>svg {
+        width: 40px;
+        height: 40px;
+        display: block;
+        align-self: center;
+    }
+
+    /* <!--  活動資訊 --> */
+
+    .end-time-row {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+
+    .end-time-row>label {
+        white-space: nowrap
+    }
+
+    input[type="radio"] {
+        accent-color: var(--purple-main);
+    }
+
+    .radio-pill {
+        background-color: var(--bg-section);
+        color: var(--text-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 6px 8px;
+        align-self: flex-end;
+    }
+
+    .end-time-or {
+        margin-inline: 5px;
+        color: var(--text-muted);
+    }
+
+    /* JS處理或的問題 */
+    .char-count {
+        align-self: flex-end;
+    }
+
+    /* <!-- 送出區 --> */
+    button {
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 3px 7px;
+        background-color: var(--badge-purple-text);
+        color: var(--badge-purple-bg);
+        border: 1px solid var(--badge-purple-bg);
+        cursor: pointer;
+        /* padding: 0; */
+    }
+
+    .btn-cancel {
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 3px 7px;
+        background-color: var(--badge-grey-bg);
+        color: var(--badge-grey-text);
+        border: 1px solid var(--badge-grey-text);
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-top: -30px;
+    }

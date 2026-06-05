@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveGround</title>
+    <title>ONE OK ROCK — LiveGround</title>
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/artist.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body class="theme-light">
     <!-- NAV -->
     <nav id="LG_NAV">
         <a href="index.html" class="nav-logo">
@@ -28,9 +29,156 @@
             <a href="#" class="nav-login">登入</a>
         </div>
     </nav>
+    <!-- hero -->
+    <section id="artist-hero">
+        <div class="artist-hero-bg"></div>
+        <div class="artist-hero-overlay"></div>
+        <div class="page-hero-content">
+            <p class="page-hero-label">CHEERING</p>
+            <h1 class="page-hero-title">應援活動</h1>
+            <p class="page-hero-sub">台灣粉絲自發的應援活動，一起讓現場更有溫度</p>
+        </div>
+        </div>
+    </section>
 
+    <main id="artist-main">
+        <!-- side -->
+        <!-- 藝人詳細頁 -->
+        <aside id="artist-sidebar">
+            <div class="sidebar-artist-img">
+                <img src="img/1492022.jpg" alt="ONE OK ROCK">
+            </div>
+            <div class="sidebar-artist-info">
+                <h2 class="sidebar-artist-name">ONE OK ROCK</h2>
+                <p>
+                    來自東京的四人搖滾樂團，2005年成軍。
+                    以融合日式情感與西方搖滾的音樂風格聞名，
+                    多次完成亞洲及歐美巡迴演出。
+                </p>
+            </div>
+            <div class="sidebar-stats">
+                <div class="sidebar-stat">
+                    <p class="sidebar-stat-value">12.4M</p>
+                    <p class="sidebar-stat-label">Spotify 月聽眾</p>
+                </div>
+                <div class="sidebar-stat">
+                    <p class="sidebar-stat-value">230M</p>
+                    <p class="sidebar-stat-label">YouTube 點閱率</p>
+                </div>
+            </div>
+            <div class="sidebar-tour-info">
+                <h3>巡演介紹</h3>
+                <p>ONE OK ROCK 已公布大型世界巡迴演唱會的詳細資訊，樂團將於今秋造訪東京、臺北、杜塞道夫、巴黎、倫敦、多倫多及洛杉磯的各大體育場與表演場館。
+                </p>
+                <p>ONE OK ROCK 的「2026 Premonition World Tour」將於 4 月 25、26 日在臺北的臺北大巨蛋。展開為期兩晚的演出。</p>
+                <p>此次巡演將讓樂團登上職業生涯中規模最大的國際場館，並首度將其氣勢磅礡、製作精良的體育場級演出帶往歐洲與北美。日本及臺北場次的完整開售時程將於日後公布。
+                </p>
+            </div>
+            <div class="sidebar-links">
+                <a href="https://www.oneokrock.com/jp/" target="_blank" class="sidebar-link">
+                    <span>官方網站</span><span class="arrow">→</span>
+                </a>
+                <a href="https://www.youtube.com/@ONEOKROCK" target="_blank" class="sidebar-link">
+                    <span>YouTube</span><span class="arrow">→</span>
+                </a>
+                <a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" target="_blank" class="sidebar-link">
+                    <span>Spotify</span><span class="arrow">→</span>
+                </a>
+            </div>
+            <!-- 相關藝人 -->
+            <h3>相關藝人</h3>
+            <div class="related-list">
+                <a href="#" class="related-item">
+                    <img src="https://picsum.photos/40/40/?random=21" class="related-img">
+                    <div class="related-info">
+                        <p class="related-name">Pay money To my Pain</p>
+                        <p class="related-genre">獨立搖滾 · 日本</p>
+                    </div>
+                </a>
+                <a href="#" class="related-item">
+                    <img src="https://picsum.photos/40/40/?random=22" class="related-img">
+                    <div class="related-info">
+                        <p class="related-name">MY FIRST STORY</p>
+                        <p class="related-genre">視覺系 · 日本</p>
+                    </div>
+                </a>
+                <a href="#" class="related-item">
+                    <img src="https://picsum.photos/40/40/?random=23" class="related-img">
+                    <div class="related-info">
+                        <p class="related-name">coldrain</p>
+                        <p class="related-genre">獨立搖滾 · 日本</p>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- 卡片列表 -->
+        <div class="cheering-list">
+            <!-- 篩選列 -->
+            <div class="cheering-toolbar">
+                <div class="sort-group">
+                    <button class="sort-btn sort-btn--active">最新</button>
+                    <button class="sort-btn">熱門</button>
+                </div>
+                <a href="cheering-new.html" class="btn-new-cheer">＋ 發布應援</a>
+            </div>
+
+            <a href="cheering-detail.html" class="cheer-card">
+                <div class="cheer-card-img">
+                    <img src="img/cheer-01.jpg" alt="應援封面">
+                </div>
+                <div class="cheer-card-body">
+                    <div class="cheer-card-meta">
+                        ONE OK ROCK · 2026.04.25 台北
+                    </div>
+                    <h3 class="cheer-card-title">台灣粉絲應援小組 — 免費明信片發放</h3>
+                    <p class="cheer-card-detail">場館門口 13:00 開始 · 主辦：@tw_oor_fans</p>
+                    <div class="badge-group">
+                        <span class="badge badge--cheer">應援中</span>
+                        <span class="badge badge--genre">免費領取</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cheering-detail.html" class="cheer-card">
+                <div class="cheer-card-img">
+                    <img src="img/cheer-02.jpg" alt="應援封面">
+                </div>
+                <div class="cheer-card-body">
+                    <div class="cheer-card-meta">
+                        BUCK-TICK · 2026.05.10 大阪
+                    </div>
+                    <h3 class="cheer-card-title">BUCK-TICK 送花活動 — 舞台前花束傳遞</h3>
+                    <p class="cheer-card-detail">場館門口 14:00 開始 · 主辦：@bt_osaka_crew</p>
+                    <div class="badge-group">
+                        <span class="badge badge--on-sale">招募中</span>
+                        <span class="badge badge--genre">花束</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="cheering-detail.html" class="cheer-card">
+                <div class="cheer-card-img">
+                    <img src="img/cheer-03.jpg" alt="應援封面">
+                </div>
+                <div class="cheer-card-body">
+                    <div class="cheer-card-meta">
+                        Dir en grey · 2026.05.22 東京
+                    </div>
+                    <h3 class="cheer-card-title">Dir en grey 毛巾應援 — 統一毛巾製作</h3>
+                    <p class="cheer-card-detail">場館門口 12:30 開始 · 主辦：@deg_tw_fans</p>
+                    <div class="badge-group">
+                        <span class="badge badge--cheer">應援中</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <aside id="ad">
+
+        </aside>
+    </main>
     <!-- footer -->
-    <footer id=" LG_FOOTER">
+    <footer id="LG_FOOTER">
         <div class="footer-content">
             <div class="footer-top">
                 <div class="footer-top-left">
