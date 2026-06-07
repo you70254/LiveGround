@@ -180,14 +180,6 @@
         background-color: var(--bg-hover);
     }
 
-    .related-img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        flex-shrink: 0;
-    }
-
     .related-name {
         font-size: 13px;
         font-weight: 500;
@@ -469,4 +461,248 @@
         width: 100%;
         height: 1px;
         background-color: var(--badge-orange-text);
+    }
+
+    /* <!-- cheering卡片列表 --> */
+    .cheering-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* <!-- 篩選列 --> */
+    .cheering-toolbar {
+        display: flex;
+        margin-top: 13px;
+    }
+
+    .cheering-toolbar>h2 {
+        flex: 1;
+    }
+
+    .btn-new-cheer {
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 3px 7px;
+        background-color: var(--badge-purple-text);
+        color: var(--badge-purple-bg);
+        border: 1px solid var(--badge-purple-bg);
+    }
+
+    .btn-new-cheer:hover {
+        background-color: var(--bg-hover);
+        color: var(--purple-main);
+        border: 1px solid var(--purple-main);
+    }
+
+    .sort-btn {
+        background-color: var(--bg-hover);
+        color: var(--purple-main);
+        border: 1px solid var(--purple-main);
+    }
+
+    .sort-group>.sort-btn--active {
+        background-color: var(--badge-purple-text);
+        color: var(--badge-purple-bg);
+        border: 1px solid var(--badge-purple-bg);
+    }
+
+    /* 應援卡片列 */
+    .cheer-card-body {
+        flex: 1;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .cheer-card {
+        display: flex;
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .cheer-card:hover {
+        background-color: var(--bg-hover);
+        border-color: var(--purple-main);
+    }
+
+    .cheer-card-title {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--border-color);
+        margin-top: -10px;
+        color: var(--text-primary);
+    }
+
+    .cheer-card-meta,
+    .cheer-card-host,
+    .cheer-card .badge {
+        font-size: small;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .cheer-card-meta,
+    .cheer-card-host {
+        color: var(--text-muted);
+    }
+
+    .cheer-card-meta {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .cheer-card-img {
+        width: 120px;
+        flex-shrink: 0;
+    }
+
+    .cheer-card-img>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cheer-card-detail {
+        margin-block: -8px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .cheer-card-detail svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* <!-- cheering詳細頁 --> */
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cheer-detail-top {
+        display: flex;
+    }
+
+    .cheer-detail-info {
+        margin-left: 15px;
+    }
+
+    .cheer-detail-meta-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-block: 10px;
+    }
+
+    .cheer-detail-meta-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .cheer-detail-meta-row>.meta-label {
+        flex-shrink: 0;
+        color: var(--text-muted);
+        font-size: 13px;
+    }
+
+    .cheer-detail-meta-row>.meta-value {
+        color: var(--text-primary);
+        font-size: 13px;
+    }
+
+    .capacity-bar-bg {
+        background-color: var(--border-color);
+        border-radius: 4px;
+        height: 6px;
+        margin-top: 5px;
+    }
+
+    .capacity-bar-fill {
+        background-color: var(--purple-main);
+        border-radius: 4px;
+        height: 6px;
+    }
+
+    .cheer-detail-desc {
+        margin-top: -15px;
+    }
+
+    .cheer-detail-desc>p {
+        margin-top: -8px;
+    }
+
+    /* < !-- ② 地圖佔位 --> */
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cheer-map-placeholder>span {
+        width: 100%;
+        height: 200px;
+        background-color: var(--bg-page);
+        color: var(--text-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed var(--border-color);
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    /* < !-- 報名表單 --> */
+    .form-section>.section-header {
+        margin-bottom: -5px;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-actions>.btn-submit {
+        background-color: var(--badge-purple-bg);
+        color: var(--badge-purple-text);
+        border: 1px solid var(--badge-purple-text);
+    }
+
+    .form-actions>.btn-submit:hover {
+        background-color: var(--badge-purple-text);
+        color: var(--badge-purple-bg);
+        border: 1px solid var(--badge-purple-bg);
+    }
+
+    /* <!--  留言區 --> */
+    .form-section>.section-header {
+        margin-bottom: 5px;
+    }
+
+    .comment-contents {
+        margin-top: -5px;
+        color: var(--text-secondary);
+        font-size: 14px;
+    }
+
+    .comment-author {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .comment-time {
+        font-size: 12px;
+        color: var(--text-muted);
     }

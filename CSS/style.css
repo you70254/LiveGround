@@ -23,6 +23,13 @@ html {
     scroll-behavior: smooth;
 }
 
+button {
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
 :root {
     /* 背景 */
     --bg-page: #0a0a0f;
@@ -58,6 +65,7 @@ body.theme-light {
     --text-secondary: #4a3a6a;
     --text-muted: #9080b0;
     --border-color: #c4aaff;
+    /* 卡片邊邊色 */
 
     /* badge 用色 */
     --badge-red-bg: #fde8e8;
@@ -187,4 +195,34 @@ summary::-webkit-details-marker {
     height: 20px;
     display: block;
     align-self: center;
+}
+
+input[type="radio"] {
+    accent-color: var(--purple-main);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--purple-main);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    background-color: var(--bg-section);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--purple-main);
+    outline-offset: 2px;
+    background-color: var(--bg-section);
 }

@@ -95,32 +95,6 @@
         flex-direction: column;
     }
 
-    input[type="text"],
-    input[type="number"],
-    input[type="time"],
-    select,
-    textarea {
-        width: 100%;
-        background-color: var(--bg-section);
-        color: var(--text-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 8px 12px;
-        margin-top: 5px;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-        outline: 2px solid var(--purple-main);
-        outline-offset: 2px;
-        background-color: var(--bg-section);
-    }
-
-    input[type="checkbox"] {
-        accent-color: var(--purple-main);
-    }
-
     .checkbox-item {
         background-color: var(--bg-section);
         color: var(--text-secondary);
@@ -169,10 +143,6 @@
         white-space: nowrap
     }
 
-    input[type="radio"] {
-        accent-color: var(--purple-main);
-    }
-
     .radio-pill {
         background-color: var(--bg-section);
         color: var(--text-secondary);
@@ -193,14 +163,10 @@
     }
 
     /* <!-- 送出區 --> */
-    button {
-        font-size: 16px;
-        border-radius: 20px;
-        padding: 3px 7px;
+    .btn-submit {
         background-color: var(--badge-purple-text);
         color: var(--badge-purple-bg);
         border: 1px solid var(--badge-purple-bg);
-        cursor: pointer;
         /* padding: 0; */
     }
 
