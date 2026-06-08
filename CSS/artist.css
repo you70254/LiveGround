@@ -8,7 +8,7 @@
         z-index: 2;
     }
 
-    section:not(#artist-hero) {
+    section:not(#artist-hero):not(#lp-hero) {
         margin: auto;
         position: relative;
         padding-inline: 30px;
@@ -229,6 +229,11 @@
     }
 
     /* < !-- 巡演資訊 --> */
+
+    #section-info>.date-item {
+        margin-top: 10px;
+    }
+
     .tour-meta {
         padding-block: 5px;
         margin-top: -15px;
@@ -583,9 +588,10 @@
 
     /* <!-- cheering詳細頁 --> */
 
-    img {
+    .cheer-detail-img img {
         width: 200px;
         height: 200px;
+        object-fit: cover;
     }
 
     .cheer-detail-top {
@@ -640,7 +646,7 @@
         margin-top: -8px;
     }
 
-    /* < !-- ② 地圖佔位 --> */
+    /* < !--  地圖佔位 --> */
     .form-section {
         display: flex;
         flex-direction: column;

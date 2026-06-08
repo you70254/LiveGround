@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/artist.css">
+    <link rel="stylesheet" href="CSS/list-page.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap"
         rel="stylesheet">
@@ -30,9 +30,9 @@
         </div>
     </nav>
     <!-- hero -->
-    <section id="artist-hero">
-        <div class="artist-hero-bg"></div>
-        <div class="artist-hero-overlay"></div>
+    <section id="lp-hero">
+        <div class="lp-hero-bg"></div>
+        <div class="lp-hero-overlay"></div>
         <div class="page-hero-content">
             <p class="page-hero-label">CHEERING</p>
             <h1 class="page-hero-title">應援活動</h1>
@@ -41,10 +41,10 @@
         </div>
     </section>
 
-    <main id="artist-main">
+    <main id="lp-main">
         <!-- side -->
         <!-- 藝人詳細頁 -->
-        <aside id="artist-sidebar">
+        <aside id="lp-sidebar">
             <div class="sidebar-artist-img">
                 <img src="img/1492022.jpg" alt="ONE OK ROCK">
             </div>
@@ -113,9 +113,9 @@
         </aside>
 
         <!-- 卡片列表 -->
-        <div class="cheering-list">
+        <div id="lp-content">
             <!-- 篩選列 -->
-            <div class="cheering-toolbar">
+            <div class="lp-toolbar">
                 <h2>應援活動</h2>
                 <a href="cheering-new.html" class="btn-new-cheer">＋ 發布應援</a>
                 <div class="sort-group">
@@ -124,21 +124,21 @@
                 </div>
             </div>
 
-            <a href="cheering-detail.html" class="cheer-card">
-                <div class="cheer-card-img">
+            <a href="cheering-detail.html" class="lp-card">
+                <div class="lp-card__img">
                     <img src="img/1492022.jpg" alt="應援封面">
                 </div>
-                <div class="cheer-card-body">
-                    <div class="cheer-card-meta">
+                <div class="lp-card__body">
+                    <div class="lp-card__meta">
                         ONE OK ROCK · 2026.04.25 台北
                         <div class="badge-group">
                             <span class="badge badge--cheer">應援中</span>
                             <span class="badge badge--genre">免費領取</span>
                         </div>
                     </div>
-                    <h3 class="cheer-card-title">台灣粉絲應援小組 — 免費明信片發放<span class="cheer-card-host">主辦：@tw_oor_fans</span>
+                    <h3 class="lp-card__title">台灣粉絲應援小組 — 免費明信片發放<span class="lp-card__host">主辦：@tw_oor_fans</span>
                     </h3>
-                    <p class="cheer-card-detail">
+                    <p class="lp-card__detail">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
@@ -165,22 +165,22 @@
                 </div>
             </a>
 
-            <a href="cheering-detail.html" class="cheer-card">
-                <div class="cheer-card-img">
+            <a href="cheering-detail.html" class="lp-card">
+                <div class="lp-card__img">
                     <img src="img/cheer-02.jpg" alt="應援封面">
                 </div>
-                <div class="cheer-card-body">
-                    <div class="cheer-card-meta">
+                <div class="lp-card__body">
+                    <div class="lp-card__meta">
                         BUCK-TICK · 2026.05.10 大阪
                         <div class="badge-group">
                             <span class="badge badge--on-sale">招募中</span>
                             <span class="badge badge--genre">花束</span>
                         </div>
                     </div>
-                    <h3 class="cheer-card-title">BUCK-TICK 送花活動 — 舞台前花束傳遞<span
-                            class="cheer-card-host">主辦：@bt_osaka_crew</span>
+                    <h3 class="lp-card__title">BUCK-TICK 送花活動 — 舞台前花束傳遞<span
+                            class="lp-card__host">主辦：@bt_osaka_crew</span>
                     </h3>
-                    <p class="cheer-card-detail">
+                    <p class="lp-card__detail">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
@@ -209,21 +209,21 @@
                 </div>
             </a>
 
-            <a href="cheering-detail.html" class="cheer-card">
-                <div class="cheer-card-img">
+            <a href="cheering-detail.html" class="lp-card">
+                <div class="lp-card__img">
                     <img src="img/cheer-03.jpg" alt="應援封面">
                 </div>
-                <div class="cheer-card-body">
-                    <div class="cheer-card-meta">
+                <div class="lp-card__body">
+                    <div class="lp-card__meta">
                         Dir en grey · 2026.05.22 東京
                         <div class="badge-group">
                             <span class="badge badge--cheer">應援中</span>
                         </div>
                     </div>
-                    <h3 class="cheer-card-title">Dir en grey 毛巾應援 — 統一毛巾製作<span
-                            class="cheer-card-host">主辦：@deg_tw_fans</span>
+                    <h3 class="lp-card__title">Dir en grey 毛巾應援 — 統一毛巾製作<span
+                            class="lp-card__host">主辦：@deg_tw_fans</span>
                     </h3>
-                    <p class="cheer-card-detail">
+                    <p class="lp-card__detail">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
