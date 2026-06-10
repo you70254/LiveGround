@@ -167,16 +167,19 @@
         background-color: var(--badge-purple-text);
         color: var(--badge-purple-bg);
         border: 1px solid var(--badge-purple-bg);
-        /* padding: 0; */
+        padding: 5px 13px;
+
     }
 
     .btn-cancel {
         font-size: 16px;
         border-radius: 20px;
-        padding: 3px 7px;
+        padding: 5px 13px;
         background-color: var(--badge-grey-bg);
         color: var(--badge-grey-text);
         border: 1px solid var(--badge-grey-text);
+        display: flex;
+        align-items: center;
     }
 
     .form-actions {

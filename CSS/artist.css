@@ -97,7 +97,7 @@
 
     /* <!-- 藝人詳細頁 --> */
     aside {
-        width: 98%;
+        width: 95%;
         margin-inline: auto;
     }
 
@@ -109,10 +109,18 @@
         object-fit: cover;
     }
 
-    .sidebar-artist-info,
+    .sidebar-artist-name,
     .sidebar-stat {
         text-align: center;
         color: var(--text-primary)
+    }
+
+    .sidebar-artist-info>p,
+    .sidebar-tour-info>p {
+        width: 90%;
+        margin: auto;
+        color: var(--text-secondary);
+        margin-block: 8px;
     }
 
     .sidebar-stats {
@@ -302,7 +310,7 @@
     }
 
     /* <!-- 入場規定 --> */
-    .rules-section {
+    .rules-section>h2 {
         margin-block: 10px;
     }
 

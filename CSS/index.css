@@ -91,7 +91,7 @@
 .about-card {
     height: 200px;
     border: 1px solid var(--purple-sub);
-    border-radius: 10%;
+    border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -232,6 +232,7 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 16px;
+    transition: transform 0.5s ease;
 }
 
 

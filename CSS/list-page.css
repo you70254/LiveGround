@@ -94,7 +94,7 @@ h3 {
 
 /* <!-- sidebar --> */
 #lp-sidebar {
-    width: 98%;
+    width: 95%;
     margin-inline: auto;
 }
 
@@ -106,10 +106,18 @@ h3 {
     object-fit: cover;
 }
 
-.sidebar-artist-info,
+.sidebar-artist-name,
 .sidebar-stat {
     text-align: center;
-    color: var(--text-primary);
+    color: var(--text-primary)
+}
+
+.sidebar-artist-info>p,
+.sidebar-tour-info>p {
+    width: 90%;
+    margin: auto;
+    color: var(--text-secondary);
+    margin-block: 8px;
 }
 
 .sidebar-stats {
@@ -294,6 +302,12 @@ h3 {
     margin-block: -4px;
     color: var(--text-secondary);
     font-size: 13px;
+}
+
+.lp-card__detail span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .lp-card__detail svg {
