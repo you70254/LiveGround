@@ -218,7 +218,7 @@ textarea {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 8px 12px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 input:focus,
@@ -227,4 +227,13 @@ textarea:focus {
     outline: 2px solid var(--purple-main);
     outline-offset: 2px;
     background-color: var(--bg-section);
+}
+
+.color-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.req {
+    color: red;
 }

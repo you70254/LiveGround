@@ -1,11 +1,11 @@
 // 讓藝人卡片可以移動
-let track = document.getElementById('latest-track');
-let leftBtn = document.getElementById('left-button');
-let rightBtn = document.getElementById('right-button');
-let wrapper = document.querySelector('.latest-track-wrapper');
+const track = document.getElementById('latest-track');
+const leftBtn = document.getElementById('left-button');
+const rightBtn = document.getElementById('right-button');
+const wrapper = document.querySelector('.latest-track-wrapper');
 let position = 0;
 let cardWidth = 246;
-let cards = document.querySelectorAll('.artist-card');
+const cards = document.querySelectorAll('.artist-card');
 let maxScroll = track.scrollWidth - wrapper.offsetWidth;
 
 checkBtn();

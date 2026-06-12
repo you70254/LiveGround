@@ -460,6 +460,13 @@
         margin: 10px;
     }
 
+    .warn-banner>p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .warn-link {
         position: relative;
     }

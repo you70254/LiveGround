@@ -6,7 +6,7 @@
     width: 95%;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 50;
     font-family: "Inter", "Noto Sans TC", sans-serif;
     left: 50%;
     transform: translateX(-50%);
