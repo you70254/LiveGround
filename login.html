@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — LiveGround</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="theme-light">
+    <main class="login-page">
+        <div class="login-card">
+            <div class="login-logo">
+                LIVEGROUND
+            </div>
+
+            <div class="login-tabs">
+                <div class="login-tab " id="tab-login">
+                    登入
+                </div>
+                <div class="login-tab active" id="tab-register">
+                    註冊
+                </div>
+            </div>
+            <!-- 登入 -->
+            <div class="pane-login" style="display: none">
+                <p class="login-heading">歡迎回來</p>
+                <button class="btn-google">
+                    <img src="img/material-icon-theme--google.png" alt="">
+                    以 Google 帳號登入
+                </button>
+
+
+                <div class="login-divider"><span>或使用 Email 登入</span></div>
+
+                <div class="login-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="your@email.com">
+                </div>
+                <div class="login-field">
+                    <label>密碼</label>
+                    <input type="password" placeholder="請輸入密碼">
+                    <img src="" id="eye" title="open">
+                </div>
+
+                <div class="login-forgot"><a>忘記密碼？</a></div>
+                <button class="btn-primary-login">登入</button>
+                <p class="login-switch">還沒有帳號？<a>立即註冊</a></p>
+            </div>
+
+            <!-- 註冊 pane -->
+            <div id="pane-register">
+                <p class="login-heading">建立帳號</p>
+
+                <button class="btn-google">
+                    <img src="img/material-icon-theme--google.png" alt="">
+                    以 Google 帳號快速註冊
+                </button>
+
+                <div class="login-divider"><span>或使用 Email 註冊</span></div>
+
+                <div class="login-field">
+                    <label>帳號名稱</label>
+                    <input type="text" placeholder="@username（公開顯示於留言）">
+                </div>
+                <div class="login-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="your@email.com">
+                </div>
+                <div class="login-field">
+                    <label>密碼</label>
+                    <input type="password" placeholder="至少 8 個字元">
+                </div>
+
+                <div class="login-agree">
+                    <input type="checkbox" id="agree">
+                    <span>我已閱讀並同意 <a>使用條款</a> 與 <a>隱私政策</a></span>
+                </div>
+
+                <button class="btn-primary-login">建立帳號</button>
+                <p class="login-switch">已有帳號？<a onclick="switchTab('login')">立即登入</a></p>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <script src="./vendors/jquery/code.jquery.com/jquery-4.0.0.min.js"></script>
+</body>
+
+</html>

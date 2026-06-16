@@ -26,7 +26,7 @@
             <a href="">地圖版</a>
             <a href="">應援版</a>
             <div class="nav-line"></div>
-            <a href="#" class="nav-login">登入</a>
+            <a href="login.html" class="nav-login">登入</a>
         </div>
     </nav>
 
@@ -129,7 +129,7 @@
                 <div class="section-header">
                     <h2 class="section-header__title">巡演場次</h2>
                     <a class="more off-more" href="https://oneokrock-pf.com/feature/detoxjapantourfinal"
-                        target="_blank">官方售票頁<span class="arrow">→</span></a>
+                        target="_blank">官方售票頁<span class="arrow-right">→</span></a>
                 </div>
                 <P class="tour-meta">2026.04 – 2026.04 · 2 場</P>
                 <div class="date-item">
@@ -228,7 +228,7 @@
             <section id="section-comments">
                 <div class="section-header">
                     <h2 class="section-header__title">粉絲留言版</h2>
-                    <a class="more" href="">查看全部</a>
+                    <a class="more" href="review.html">查看全部</a>
                 </div>
                 <div class="list">
                     <div class="comment">
@@ -264,7 +264,7 @@
                     <h2 class="section-header__title">應援活動區</h2>
                     <a class="more" href="cheering.html">查看全部</a>
                 </div>
-                <div class=" list">
+                <div class="list">
                     <div class="card">
                         <img src="https://picsum.photos/60/60/?random=27" class="cheer-icon">
                         <div class="cheer-info">
@@ -286,7 +286,7 @@
             <section id="section-merch">
                 <div class="section-header">
                     <h2 class="section-header__title">周邊即時回報</h2>
-                    <button class="add-report-btn">＋ 新增回報</button>
+                    <button class="add-report-btn" id="btn-open-merch-modal">＋ 新增回報</button>
                 </div>
                 <p class="merch-updated">最後更新：18:42（場內回報）</p>
                 <div class="list">
@@ -319,7 +319,7 @@
                     <p><img src="img/warning-svgrepo-com.svg" class="color-icon warn-icon"> 本站嚴禁超過原價販售<img
                             src="img/warning-svgrepo-com.svg" class="color-icon warn-icon">發現黃牛票</p>
                     <a href="https://noscalper.moc.gov.tw/" target="_blank" class="warn-link">請向文化部檢舉<span
-                            class="arrow">→</span></a>
+                            class="arrow-right">→</span></a>
                 </div>
                 <div class=" list">
                     <div class="card">
@@ -356,6 +356,57 @@
 
         </aside>
     </main>
+
+    <!-- 周邊即時回報 modal -->
+    <div id="merch-report-modal" class="modal-overlay" aria-hidden="true" style="display:none">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>周邊即時回報</h2>
+                <button id="btn-merch-close" class="modal-close" aria-label="關閉">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="merch-card-list">
+                    <!-- 商品卡 template，JS 會動態複製這個 -->
+                    <div class="merch-report-card">
+                        <div class="merch-report-card__header">
+                            <span class="merch-card-index">商品 1</span>
+                        </div>
+                        <div class="merch-report-card__fields">
+                            <div class="form-field">
+                                <label class="form-label">商品名稱 <span class="req">*</span></label>
+                                <input type="text" placeholder="例：Tour T 恤">
+                            </div>
+                            <div class="form-field">
+                                <label class="form-label">規格</label>
+                                <input type="text" placeholder="例：M（無則留空）">
+                            </div>
+                            <div class="form-field">
+                                <label class="form-label">價格</label>
+                                <input type="text" placeholder="例：¥4,500">
+                            </div>
+                            <div class="form-field">
+                                <label class="form-label">庫存</label>
+                                <select>
+                                    <option value="sold">完售</option>
+                                    <option value="available">有貨</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-add-card" class="merch-add-card-btn">
+                    <i class="ti ti-plus"></i> 新增另一個商品
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-cancel">取消回報</button>
+                <button id="btn-submit">送出回報</button>
+            </div>
+        </div>
+    </div>
+    <!-- chevron -->
     <a href="#" id="back-to-top"><svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
@@ -384,6 +435,8 @@
             <p class="footer-copyright">© 2025 LiveGround. For fans, by fans.</p>
         </div>
     </footer>
+    <script src="./vendors/jquery/code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="JS/artist.js"></script>
 </body>
 
 </html>

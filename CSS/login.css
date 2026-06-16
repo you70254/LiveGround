@@ -1,0 +1,197 @@
+        /*頁面佈局：佔滿一個視口*/
+        .login-page {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /*  卡片  */
+        .login-card {
+            position: relative;
+            width: 420px;
+            background-color: var(--bg-section);
+            border-radius: 15px;
+            padding: 2rem;
+            /* max-width: cal(100vh - 4rem); */
+        }
+
+        /*  Logo  */
+        .login-logo {
+            font-family: var(--font-space);
+            font-size: 25px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.20em;
+            color: var(--text-primary);
+            margin-bottom: 1em;
+        }
+
+        /*  Tab  */
+        .login-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+        }
+
+        .login-tab {
+            flex: 1;
+            text-align: center;
+            padding-block: 0.25em;
+            font-weight: 500;
+            color: var(--text-muted);
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: color 0.15s, border-color 0.15s;
+        }
+
+        .active {
+            color: var(--text-primary);
+            border-bottom-color: var(--text-primary);
+        }
+
+        .login-heading {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        /*  Google 按鈕 */
+        .btn-google {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-color);
+            gap: 10px;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-google img {
+            height: 18px;
+            width: 18px;
+        }
+
+        .btn-google:hover {
+            background: var(--bg-hover);
+        }
+
+        /*  Divider  */
+        .login-divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0.5rem 0;
+        }
+
+        .login-divider::before,
+        .login-divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        .login-divider>span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /*  欄位  */
+        .login-field {
+            margin-bottom: 0.9rem;
+        }
+
+        .login-field label {
+            display: block;
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 0.35rem;
+            letter-spacing: 0.03em;
+        }
+
+        /*  忘記密碼 */
+        .login-forgot {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -0.5rem;
+            margin-bottom: 0.9rem;
+            font-size: 12px;
+        }
+
+        .login-forgot a {
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        /* 按鈕 */
+
+        .btn-primary-login {
+            width: 50%;
+            height: 42px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .btn-primary-login:hover {
+            background: var(--bg-hover);
+        }
+
+
+        /* 切換 */
+        .login-switch {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+
+        .login-switch a {
+            color: var(--text-primary);
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /*  同意條款  */
+
+        .login-agree {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .login-agree input[type="checkbox"] {
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .login-agree span {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .login-agree a {
+            color: var(--text-primary);
+            font-size: 13px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
