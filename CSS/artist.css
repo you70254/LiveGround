@@ -201,10 +201,21 @@
 
     /* <!-- tab nav --> */
     #artist-tabs {
+        position: sticky;
+        top: 60px;
+        z-index: 50;
+        background-color: var(--bg-page);
         padding: 3px 20px;
         display: flex;
         justify-content: space-around;
         border-bottom: 1px solid var(--purple-main);
+    }
+
+    #section-comments,
+    #section-cheering,
+    #section-merch,
+    #section-ticket {
+        scroll-margin-top: 120px;
     }
 
     .tab-item {

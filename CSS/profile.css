@@ -1,0 +1,290 @@
+/* <!-- profile main layout --> */
+#profile-main {
+    width: 95%;
+    margin: auto;
+    margin-top: 110px;
+    position: relative;
+    background-color: var(--bg-page);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-bottom: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* <!-- 個人資料卡 --> */
+#profile-sidebar {
+    margin-top: 70px;
+}
+
+.sidebar-avatar img {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--purple-main);
+}
+
+.sidebar-profile-info {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.sidebar-profile-name {
+    font-family: var(--font-space);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.sidebar-profile-bio {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+    padding-inline: 10px;
+}
+
+.sidebar-join-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 6px;
+}
+
+.btn-edit-profile {
+    width: 100%;
+    margin-top: 16px;
+    background-color: var(--badge-purple-text);
+    color: var(--badge-purple-bg);
+    border: 1px solid var(--badge-purple-bg);
+}
+
+.btn-edit-profile:hover {
+    background-color: var(--bg-hover);
+    color: var(--purple-main);
+    border: 1px solid var(--purple-main);
+}
+
+/* <!-- sticky tab nav --> */
+#profile-tabs {
+    position: sticky;
+    top: 60px;
+    z-index: 50;
+    background-color: var(--bg-page);
+    margin-top: 20px;
+    padding: 3px 20px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--purple-main);
+}
+
+#section-tickets,
+#section-reviews,
+#section-cheering-history {
+    scroll-margin-top: 120px;
+}
+
+/* <!-- 參戰紀錄 section-header 右側場次數,沒有查看全部連結 --> */
+.section-count {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* <!-- 參戰紀錄：票卡橫向滑動容器，沿用 index.css 的滑動機制改名 --> */
+
+.ticket-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    transition: transform 0.5s ease;
+}
+
+.latest-track-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#left-button {
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 40;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+#right-button {
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 40;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+button>svg {
+    height: 20px;
+    width: 20px;
+    margin-inline: -7px;
+    color: var(--border-color);
+}
+
+
+#left-button:hover,
+#right-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#left-button,
+#right-button {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.latest-track-wrapper:hover #left-button,
+.latest-track-wrapper:hover #right-button {
+    opacity: 1;
+}
+
+
+/* <!-- 票卡本體：海報 + 撕票線 + 存根 --> */
+.ticket-card {
+    display: flex;
+    width: 320px;
+    height: 130px;
+    flex-shrink: 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ticket-poster {
+    position: relative;
+    flex: 1;
+}
+
+.ticket-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ticket-poster-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+    color: #fff;
+}
+
+.ticket-artist-name {
+    font-family: var(--font-space);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ticket-tour-name,
+.ticket-venue {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+.ticket-perforation {
+    position: relative;
+    width: 1px;
+    border-left: 2px dashed var(--border-color);
+    flex-shrink: 0;
+}
+
+.notch {
+    position: absolute;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--bg-page);
+    transform: translateX(-50%);
+}
+
+.notch--top {
+    top: -8px;
+}
+
+.notch--bottom {
+    bottom: -8px;
+}
+
+.ticket-stub {
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.stub-month {
+    font-size: 20px;
+}
+
+.stub-day {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.stub-year {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.stub-divider {
+    width: 60%;
+    border-top: 1px dashed var(--border-color);
+    margin-bottom: 8px;
+}
+
+.stub-seat {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.stub-price {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--purple-main);
+}
+
+/* <!-- 我的心得：精簡版卡片，到 footer 就停，拿掉留言區的底線/間距 --> */
+.review-card--compact .review-card__footer {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* <!-- 應援紀錄：已結束狀態，badge 系統目前沒有灰色版本，沿用既有 grey 變數新增一個 modifier --> */
+.badge--ended {
+    background-color: var(--badge-grey-bg);
+    color: var(--badge-grey-text);
+    border: 1px solid var(--badge-grey-text);
+}

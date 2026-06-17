@@ -266,6 +266,10 @@ textarea:focus {
     background-color: var(--bg-section);
 }
 
+textarea {
+    resize: vertical;
+}
+
 .color-icon {
     width: 20px;
     height: 20px;
