@@ -8,18 +8,6 @@
         z-index: 2;
     }
 
-    section:not(#artist-hero):not(#lp-hero) {
-        margin: auto;
-        position: relative;
-        padding-inline: 30px;
-        padding-block: 10px;
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        margin-block: 15px;
-        background-color: var(--bg-section);
-        color: var(--text-primary);
-    }
-
     .section-header {
         display: flex;
         justify-content: space-between;

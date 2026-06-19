@@ -881,3 +881,15 @@ label {
 .review-card__footer span:hover {
     color: var(--purple-main);
 }
+
+section:not(#artist-hero):not(#lp-hero) {
+    margin: auto;
+    position: relative;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-block: 15px;
+    background-color: var(--bg-section);
+    color: var(--text-primary);
+}
