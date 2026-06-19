@@ -14,6 +14,8 @@
 /* <!-- 個人資料卡 --> */
 #profile-sidebar {
     margin-top: 70px;
+    width: 95%;
+    margin-inline: auto;
 }
 
 .sidebar-avatar img {
@@ -66,12 +68,16 @@
 }
 
 /* <!-- sticky tab nav --> */
+#profile-content {
+    width: 95%;
+    margin-inline: auto;
+}
+
 #profile-tabs {
     position: sticky;
     top: 60px;
     z-index: 50;
     background-color: var(--bg-page);
-    margin-top: 20px;
     padding: 3px 20px;
     display: flex;
     justify-content: space-around;
