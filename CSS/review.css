@@ -1,13 +1,3 @@
-    #back-to-top {
-        position: fixed;
-        right: 50px;
-        bottom: 50px;
-        border: none;
-        border-radius: 20px;
-        padding: 10px;
-        z-index: 2;
-    }
-
     section:not(#artist-hero):not(#lp-hero) {
         margin: auto;
         position: relative;
@@ -219,11 +209,6 @@
         margin-bottom: 16px;
     }
 
-    .review-count {
-        font-size: 14px;
-        color: var(--text-muted);
-    }
-
     /* 排序列 + 寫心得按鈕 */
 
     .review-toolbar {
@@ -231,39 +216,6 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
-    }
-
-    .review-sort {
-        display: flex;
-        align-items: center;
-        font-size: 13px;
-        color: var(--text-muted);
-        gap: 8px;
-    }
-
-    .review-sort a {
-        color: var(--text-muted);
-        text-decoration: none;
-    }
-
-    .review-sort a.sort-active {
-        color: var(--purple-main);
-        font-weight: 500;
-    }
-
-    .btn-write-review {
-        background: none;
-        border: none;
-        font-size: 14px;
-        border-radius: 20px;
-        padding: 3px 7px;
-        background-color: var(--badge-blue-bg);
-        color: var(--badge-blue-text);
-        border: 1px solid var(--badge-blue-text)
-    }
-
-    .btn-write-review:hover {
-        background-color: #d5e3fc;
     }
 
 

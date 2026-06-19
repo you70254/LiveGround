@@ -198,7 +198,11 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-block: 13px;
+}
+
+.lp-header {
+    display: flex;
+    flex-direction: column;
 }
 
 /* <!-- toolbar 篩選列 --> */
@@ -220,7 +224,9 @@ h3 {
 .lp-toolbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
+    color: var(--text-secondary);
 }
 
 .lp-toolbar>h2 {
@@ -892,4 +898,36 @@ section:not(#artist-hero):not(#lp-hero) {
     margin-block: 15px;
     background-color: var(--bg-section);
     color: var(--text-primary);
+}
+
+#lp-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0 14px 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 16px;
+}
+
+.review-count {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.review-sort {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.review-sort a.sort-active {
+    color: var(--purple-main);
+    font-weight: 500;
+}
+
+.review-sort a {
+    color: var(--text-muted);
+    text-decoration: none;
 }

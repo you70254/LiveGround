@@ -147,13 +147,18 @@
 
         <!-- 卡片列表 -->
         <div id="lp-content">
-            <!-- toolbar -->
-            <div class="lp-toolbar">
-                <h2>公告列表</h2>
-                <button class="btn-new-cheer" id="btn-open-modal">＋ 發布公告</button>
-                <div class="sort-group">
-                    <button class="sort-btn sort-btn--active">最新</button>
-                    <button class="sort-btn">熱門</button>
+            <div class="lp-header">
+                <div id="lp-topbar">
+                    <a class="review-back" href="artist.html"><span class="arrow-left">←</span>返回演唱會頁</a>
+                    <span class="review-count">公告列表 · 12 筆</span>
+                </div>
+                <!-- toolbar -->
+                <div class="lp-toolbar">
+                    <h2>公告列表</h2>
+                    <div class="review-sort">
+                        <button class="add-report-btn" id="btn-open-modal">＋ 發布公告</button>
+                        排序：<a href="#" class="sort-active">最新</a> / <a href="#">最熱門</a>
+                    </div>
                 </div>
             </div>
 
@@ -539,6 +544,10 @@
             <p class="footer-copyright">© 2025 LiveGround. For fans, by fans.</p>
         </div>
     </footer>
+
+    <a href="#" id="back-to-top"><svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+    </svg></a>
     <script src="./vendors/jquery/code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="JS/transfer.js"></script>
 </body>

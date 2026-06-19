@@ -18,6 +18,7 @@ a {
 body {
     background: linear-gradient(135deg, #1e1040, #2d1a50, #0e0e16);
     font-family: var(--font-inter);
+    color: var(--text-primary);
 }
 
 html {
@@ -218,6 +219,21 @@ body.theme-light {
     margin-top: 10px;
 }
 
+.add-report-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 3px 7px;
+    background-color: var(--badge-blue-bg);
+    color: var(--badge-blue-text);
+    border: 1px solid var(--badge-blue-text);
+}
+
+.add-report-btn:hover {
+    background-color: #d5e3fc;
+}
+
 summary {
     list-style: none;
 }
@@ -277,4 +293,14 @@ textarea {
 
 .req {
     color: red;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 2;
 }
