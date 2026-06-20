@@ -249,15 +249,30 @@ body.theme-light {
     margin-top: 10px;
 }
 
-.add-report-btn {
+.review-sort a.add-report-btn {
     background: none;
     border: none;
     font-size: 14px;
     border-radius: 20px;
     padding: 3px 7px;
     background-color: var(--badge-blue-bg);
-    color: var(--badge-blue-text);
     border: 1px solid var(--badge-blue-text);
+    color: var(--badge-blue-text);
+}
+
+button.add-report-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 3px 7px;
+    background-color: var(--badge-blue-bg);
+    border: 1px solid var(--badge-blue-text);
+    color: var(--badge-blue-text);
+}
+
+button.add-report-btn:hover {
+    background-color: #d5e3fc;
 }
 
 .add-report-btn:hover {
