@@ -53,6 +53,23 @@ button {
     --text-primary: #f0eeff;
     --text-secondary: #a89ec0;
     --text-muted: #5a5070;
+    /* 邊框 */
+    --border-color: #2e2a3f;
+    /* badge 用色（暗色模式） */
+    --badge-red-bg: #2d0f0f;
+    --badge-red-text: #f87171;
+    --badge-green-bg: #0d2610;
+    --badge-green-text: #86efac;
+    --badge-purple-bg: #2d1b69;
+    --badge-purple-text: #c4b5fd;
+    --badge-orange-bg: #2d1500;
+    --badge-orange-text: #fdba74;
+    --badge-blue-bg: #0f1f3d;
+    --badge-blue-text: #93c5fd;
+    --badge-grey-bg: #1e1e2e;
+    --badge-grey-text: #9ca3af;
+    --badge-pink-bg: #3d0f2d;
+    --badge-pink-text: #f9a8d4;
     /* 字體 */
     --font-space: 'Space Grotesk', 'Noto Sans TC', sans-serif;
     --font-inter: 'Inter', 'Noto Sans TC', sans-serif;
@@ -64,14 +81,18 @@ body.theme-light {
     --bg-section: #ede6ff;
     --bg-card: #ffffff;
     --bg-hover: #e4d8fe;
+    /* 主色（亮色模式覆蓋） */
+    --purple-main: #7c3aed;
+    --purple-dark: #5b21b6;
+    --purple-sub: #ddd6fe;
+    --purple-tint: #ede9fe;
+    /* 邊框 */
+    --border-color: #c4aaff;
     /* 字體顏色 */
     --text-primary: #1a1030;
     --text-secondary: #4a3a6a;
     --text-muted: #9080b0;
-    --border-color: #c4aaff;
-    /* 卡片邊邊色 */
-
-    /* badge 用色 */
+    /* badge 用色（亮色模式） */
     --badge-red-bg: #fde8e8;
     --badge-red-text: #9b2c2c;
     --badge-green-bg: #e6f4d7;
@@ -84,6 +105,8 @@ body.theme-light {
     --badge-blue-text: #1a4a9b;
     --badge-grey-bg: #f3f4f6;
     --badge-grey-text: #4b5563;
+    --badge-pink-bg: #fce7f3;
+    --badge-pink-text: #be185d;
 }
 
 .more {
@@ -160,20 +183,18 @@ body.theme-light {
 }
 
 .badge {
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 20px;
     padding: 3px 7px;
 }
 
 .badge--sold,
 .badge--rule {
-    background-color: var(--badge-red-bg);
     color: var(--badge-red-text);
     border: 1px solid var(--badge-red-text);
 }
 
 .badge--on-sale {
-    background-color: var(--badge-green-bg);
     color: var(--badge-green-text);
     border: 1px solid var(--badge-green-text);
 }
@@ -181,7 +202,6 @@ body.theme-light {
 .badge--genre,
 .badge--cheer,
 .badge--want {
-    background-color: var(--badge-purple-bg);
     color: var(--badge-purple-text);
     border: 1px solid var(--badge-purple-text);
 }
@@ -189,8 +209,18 @@ body.theme-light {
 .badge--country,
 .badge--merch,
 .badge--offer,
-.badge--limited,
+.badge--limited {
+    color: var(--badge-orange-text);
+    border: 1px solid var(--badge-orange-text);
+}
+
 .warn-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 3px 7px;
+    margin: 10px;
     background-color: var(--badge-orange-bg);
     color: var(--badge-orange-text);
     border: 1px solid var(--badge-orange-text);
@@ -303,4 +333,125 @@ textarea {
     border-radius: 20px;
     padding: 10px;
     z-index: 2;
+}
+
+/* ========== NAV ========== */
+#LG_NAV {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    left: 50%;
+    padding-inline: 30px;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(14, 10, 30, 0.75);
+    backdrop-filter: blur(12px);
+
+}
+
+.nav-logo img {
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #a89ec0;
+    transition: color 0.3s;
+    background-color: #3d2070;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav-links .nav-login,
+#back-to-top {
+    background-color: #8b5cf6;
+    color: #14121f;
+}
+
+.nav-links .nav-login:hover,
+#back-to-top:hover {
+    background-color: #14121f;
+    color: #8b5cf6;
+    border: 2px solid #8b5cf6;
+    padding: 8px;
+}
+
+.nav-links a:hover {
+    background-color: #6d3fd4;
+    color: #1e1a2e;
+}
+
+.nav-line {
+    width: 1px;
+    height: 20px;
+    border: 1px solid #6d3fd4;
+}
+
+/* ========== FOOTER ========== */
+#LG_FOOTER {
+    width: 100%;
+    background-color: #07070d;
+    color: #5a5070;
+    border-top: 1px solid rgba(139, 92, 246, 0.3);
+    padding-top: 24px;
+    font-family: 'Inter', 'Noto Sans TC', sans-serif;
+    font-size: 11px;
+}
+
+.footer-content {
+    width: 95%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-left {
+    flex-direction: column;
+    color: #a89ec0;
+    font-family: 'Space Grotesk', 'Noto Sans TC', sans-serif;
+}
+
+.footer-logo {
+    font-size: 20px;
+}
+
+.footer-social {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    padding-block: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.footer-links a {
+    margin-right: 10px;
+}
+
+.footer-content a:hover {
+    color: #a89ec0;
+}
+
+.footer-content>p {
+    margin-block: 10px;
 }

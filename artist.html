@@ -7,13 +7,12 @@
     <title>ONE OK ROCK — LiveGround</title>
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/list-page.css">
     <link rel="stylesheet" href="CSS/artist.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=Noto+Sans+TC:wght@400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/dist/tabler-icons.min.css">
 </head>
 
 <body class="theme-light">
@@ -23,33 +22,31 @@
             <img src="img/logo-LiveGround.svg">
         </a>
         <div class="nav-links">
-            <a href="">演唱會</a>
-            <a href="">地圖版</a>
-            <a href="">應援版</a>
             <div class="nav-line"></div>
             <a href="login.html" class="nav-login">登入</a>
         </div>
     </nav>
 
     <!-- hero -->
-    <section id="artist-hero">
-        <div class="artist-hero-bg"></div>
-        <div class="artist-hero-overlay"></div>
-        <p class="badge-group"><span class="badge badge--genre">流行搖滾</span><span class="badge badge--country">日本</span>
+    <section id="lp-hero">
+        <div class="lp-hero-bg"></div>
+        <div class="lp-hero-overlay"></div>
+        <p class="badge-group"><span class="badge badge--genre">#流行搖滾</span><span
+                class="badge badge--country">#日本</span>
         </p>
         <h1 class="artist-name">ONE OK ROCK</h1>
         <p class="artist-tour-name">2026 PREMONITION WORLD TOUR</p>
         <div class="badge-group">
-            <span class="badge badge--limited">少量餘票</span>
-            <span class="badge badge--cheer">應援中</span>
-            <span class="badge badge--merch">周邊回報</span>
+            <span class="badge badge--limited">#少量餘票</span>
+            <span class="badge badge--cheer">#應援中</span>
+            <span class="badge badge--merch">#周邊回報</span>
         </div>
     </section>
 
-    <main id="artist-main">
+    <main id="lp-main">
         <!-- side -->
         <!-- 藝人詳細頁 -->
-        <aside id="artist-sidebar">
+        <aside id="lp-sidebar">
             <div class="sidebar-artist-img">
                 <img src="img/1492022.jpg" alt="ONE OK ROCK">
             </div>
@@ -140,9 +137,9 @@
                                 <p class="date">2026.04.25<br><span>(六)</span></p>
                                 <p class="venue">臺北大巨蛋 Taipei Dome <span>台灣 · 台北</span></p>
                                 <div class="right">
-                                    <span class="badge badge--on-sale">售票中</span><svg class="chevron"
+                                    <span class="badge badge--on-sale">#售票中</span><svg class="chevron"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
@@ -180,9 +177,9 @@
                                 <p class="date">2026.04.26<br><span>(日)</span></p>
                                 <p class="venue">臺北大巨蛋 Taipei Dome <span>台灣 · 台北</span></p>
                                 <div class="right">
-                                    <span class="badge badge--sold">已完售</span>
+                                    <span class="badge badge--sold">#已完售</span>
                                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
@@ -218,9 +215,9 @@
                 <div class="rules-section">
                     <h2>入場規定</h2>
                     <div class="badge-rules">
-                        <span class="badge badge--rule">本人確認必須</span>
-                        <span class="badge badge--rule">攝影禁止</span>
-                        <span class="badge badge--rule">錄音錄影禁止</span>
+                        <span class="badge badge--rule">#本人確認必須</span>
+                        <span class="badge badge--rule">#攝影禁止</span>
+                        <span class="badge badge--rule">#錄音錄影禁止</span>
                     </div>
                 </div>
             </section>
@@ -232,30 +229,42 @@
                     <a class="more" href="review.html">查看全部<span class="arrow-right">→</span></a>
                 </div>
                 <div class="list">
-                    <div class="comment">
-                        <img src="https://picsum.photos/40/40/?random=24" class="avatar">
-                        <div class="comment-body">
-                            <div class="comment-meta">
-                                <span class="comment-name">小夏</span>
-                                <span class="comment-time">3天前</span>
+                    <article class="review-card review-card--compact">
+                        <div class="review-card__header">
+                            <div class="review-card__author">
+                                <img src="https://picsum.photos/40/40/?random=24" class="avatar">
+                                <div class="review-meta">
+                                    <span class="review-author">小夏</span>
+                                    <span class="review-time">3天前</span>
+                                </div>
                             </div>
-                            <p class="comment-text">
-                                不多文本確保大人面向，現場打電話提醒，告訴我，和我手術手術交流醫學慢慢聲音會議，比如好像改進，指數怪物作者模組還沒喜愛報紙執行環境課程，效果突出兩種老婆取消電腦加快習慣及其數字他人釣魚，體育損失地上。
-                            </p>
-                            <div class="comment-likes"><img src="img/heart_gray.png"></div>
                         </div>
-                    </div>
-                    <div class="comment">
-                        <img src="https://picsum.photos/40/40/?random=25" class="avatar">
-                        <div class="comment-body">
-                            <div class="comment-meta">
-                                <span class="comment-name">小寒</span>
-                                <span class="comment-time">3天前</span>
+                        <p class="review-card__body">
+                            不多文本確保大人面向，現場打電話提醒，告訴我，和我手術手術交流醫學慢慢聲音會議，比如好像改進，指數怪物作者模組還沒喜愛報紙執行環境課程，效果突出兩種老婆取消電腦加快習慣及其數字他人釣魚，體育損失地上。
+                        </p>
+                        <div class="review-img-single">
+                            <img src="https://picsum.photos/600/300/?random=30" alt="現場照片">
+                        </div>
+                        <div class="review-card__footer">
+                            <span><i class="ti ti-heart"></i> 24</span>
+                        </div>
+                    </article>
+
+                    <article class="review-card review-card--compact">
+                        <div class="review-card__header">
+                            <div class="review-card__author">
+                                <img src="https://picsum.photos/40/40/?random=25" class="avatar">
+                                <div class="review-meta">
+                                    <span class="review-author">小寒</span>
+                                    <span class="review-time">3天前</span>
+                                </div>
                             </div>
-                            <p class="comment-text">終於等到這場！DETOX 亞巡台北場一定要去，已經訂好機票了 ✈️ 有人要一起組團嗎？</p>
-                            <div class="comment-likes"><img src="img/heart_gray.png"></div>
                         </div>
-                    </div>
+                        <p class="review-card__body">終於等到這場！DETOX 亞巡台北場一定要去，已經訂好機票了 ✈️ 有人要一起組團嗎？</p>
+                        <div class="review-card__footer">
+                            <span><i class="ti ti-heart"></i> 24</span>
+                        </div>
+                    </article>
                 </div>
             </section>
 
@@ -295,18 +304,18 @@
                         <span class="merch-name">Tour T 恤A</span>
                         <span class="merch-price">¥4,500</span>
                         <div class="merch-sizes">
-                            M:<span class="badge badge--limited">少量</span>
-                            L:<span class="badge badge--sold">完售</span>
-                            XL:<span class="badge badge--on-sale">有貨</span>
+                            M:<span class="badge badge--sold">#完售</span>
+                            L:<span class="badge badge--sold">#完售</span>
+                            XL:<span class="badge badge--on-sale">#有貨</span>
                         </div>
                     </div>
                     <div class="merch-row">
                         <span class="merch-name">Tour T 恤B</span>
                         <span class="merch-price">¥4,500</span>
                         <div class="merch-sizes">
-                            M:<span class="badge badge--sold">完售</span>
-                            L:<span class="badge badge--limited">少量</span>
-                            XL:<span class="badge badge--on-sale">有貨</span>
+                            M:<span class="badge badge--sold">#完售</span>
+                            L:<span class="badge badge--on-sale">#有貨</span>
+                            XL:<span class="badge badge--on-sale">#有貨</span>
                         </div>
                     </div>
             </section>
@@ -327,7 +336,7 @@
                         <div class="ticket-post-header">
                             <span class="ticket-type"><img src="img/ticket-svgrepo-com.svg" class="color-icon"> 讓票 — 指定席
                                 4 張</span>
-                            <span class="badge badge--offer">讓票</span>
+                            <span class="badge badge--offer">#讓票</span>
                         </div>
                         <div class="ticket-meta">
                             <span>NT$6,800</span>
@@ -341,7 +350,7 @@
                         <div class="ticket-post-header">
                             <span class="ticket-type"><img src="img/magnifying-glass-tilted-left-svgrepo-com.svg"
                                     class="color-icon"> 徵票 — 任意區 1 張</span>
-                            <span class="badge badge--want">徵票</span>
+                            <span class="badge badge--want">#徵票</span>
                         </div>
                         <div class="ticket-meta">
                             <span>原價接受</span>

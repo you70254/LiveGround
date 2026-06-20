@@ -1,17 +1,5 @@
-    .section-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-block: 12px;
-    }
-
-    h2 {
-        font-size: 20px;
-        font-weight: 500;
-    }
-
     /* < !-- hero --> */
-    #artist-hero {
+    #lp-hero {
         width: 95%;
         margin: auto;
         position: relative;
@@ -25,157 +13,14 @@
         z-index: 0;
     }
 
-    .artist-hero-bg {
-        position: absolute;
-        border-radius: 20px 20px 0 0;
-        inset: 0;
-        background-image: url(../img/03-2.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-
-    .artist-hero-overlay {
-        position: absolute;
-        inset: 0;
-        border-radius: 20px 20px 0 0;
-        z-index: -1;
-        background: linear-gradient(to top,
-                rgba(10, 5, 20, 0.85) 0%,
-                rgba(10, 5, 20, 0.4) 50%,
-                rgba(10, 5, 20, 0.1) 100%);
-    }
-
     .artist-name,
-    .artist-tour-name,
-    .page-hero-content {
+    .artist-tour-name {
         margin-block: 10px;
         color: var(--bg-page);
         font-family: var(--font-space);
     }
 
-    .page-hero-content {
-        margin-top: 70px;
-
-    }
-
     /* <!-- main content --> */
-
-    #artist-main {
-        width: 95%;
-        margin: auto;
-        position: relative;
-        background-color: var(--bg-page);
-        display: grid;
-        grid-template-columns: 25% 60% 15%;
-        padding-bottom: 15px;
-        border-radius: 0 0 20px 20px;
-    }
-
-    /* <!-- 藝人詳細頁 --> */
-    aside {
-        width: 95%;
-        margin-inline: auto;
-    }
-
-    .sidebar-artist-img img {
-        width: 90%;
-        margin: auto;
-        padding: 10px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-    }
-
-    .sidebar-artist-name,
-    .sidebar-stat {
-        text-align: center;
-        color: var(--text-primary)
-    }
-
-    .sidebar-artist-info>p,
-    .sidebar-tour-info>p {
-        width: 90%;
-        margin: auto;
-        color: var(--text-secondary);
-        margin-block: 8px;
-    }
-
-    .sidebar-stats {
-        display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 5px;
-        border-bottom: 1px solid var(--border-color);
-    }
-
-    .sidebar-tour-info {
-        border-bottom: 1px solid var(--border-color);
-        color: var(--text-secondary);
-    }
-
-    .sidebar-stat-value {
-        font-size: 20px;
-        font-weight: 500;
-        color: var(--text-primary);
-    }
-
-    .sidebar-stat-label {
-        font-size: 12px;
-        color: var(--text-muted);
-    }
-
-    .sidebar-link>span {
-        padding-inline: 15px;
-    }
-
-    .sidebar-link {
-        display: flex;
-        justify-content: space-between;
-        padding-block: 8px;
-        border-bottom: 1px solid var(--border-color);
-        color: var(--text-secondary);
-        font-size: 13px;
-    }
-
-    .sidebar-link:hover {
-        color: var(--purple-main);
-    }
-
-    /* < !-- 相關藝人 --> */
-    h3 {
-        font-size: 20px;
-        font-weight: 500;
-        color: var(--text-muted);
-        margin-bottom: 8px;
-    }
-
-    .related-list {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .related-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 6px 8px;
-    }
-
-    .related-item:hover {
-        background-color: var(--bg-hover);
-    }
-
-    .related-name {
-        font-size: 13px;
-        font-weight: 500;
-        color: var(--text-secondary);
-    }
-
-    .related-genre {
-        font-size: 11px;
-        color: var(--text-muted);
-    }
 
     /* <!-- tab nav --> */
     #artist-tabs {
@@ -252,7 +97,7 @@
 
     .date {
         font-size: 18px;
-        color: var(--text-primary);
+        color: var(--text-secondary);
         line-height: 1.3;
         margin: 0;
     }
@@ -295,37 +140,6 @@
 
     /* <!-- 粉絲留言 --> */
 
-    .comment {
-        display: flex;
-        gap: 12px;
-    }
-
-    .comment:not(:last-child) {
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 10px;
-    }
-
-    .avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        border: 2px solid var(--purple-main);
-        object-fit: cover;
-    }
-
-    .comment-body {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .comment-meta {
-        display: flex;
-        gap: 8px;
-        align-items: baseline;
-    }
-
     .comment-likes img {
         width: 15px;
         height: 15px;
@@ -351,17 +165,11 @@
 
     .cheer-title {
         font-weight: 500;
+        color: var(--text-secondary);
     }
 
     .cheer-detail {
         font-size: 13px;
-    }
-
-    .comment {
-        background-color: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 16px;
     }
 
     /* <!-- 周邊 --> */
@@ -404,7 +212,7 @@
 
     .ticket-type {
         font-weight: 500;
-        color: var(--text-primary);
+        color: var(--text-secondary);
     }
 
     .ticket-meta {
@@ -420,154 +228,7 @@
         color: var(--accent-purple);
     }
 
-    .warn-banner {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-        font-size: 14px;
-        padding: 3px 7px;
-        margin: 10px;
-    }
-
-    .warn-banner>p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .warn-link {
-        position: relative;
-    }
-
-    .warn-link::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: block;
-        /* left: calc(50% - 15px); */
-        width: 100%;
-        height: 1px;
-        background-color: var(--badge-orange-text);
-    }
-
-    .btn-new-cheer {
-        font-size: 16px;
-        border-radius: 20px;
-        padding: 3px 7px;
-        background-color: var(--badge-purple-text);
-        color: var(--badge-purple-bg);
-        border: 1px solid var(--badge-purple-bg);
-    }
-
-    .btn-new-cheer:hover {
-        background-color: var(--bg-hover);
-        color: var(--purple-main);
-        border: 1px solid var(--purple-main);
-    }
-
-    .sort-btn {
-        background-color: var(--bg-hover);
-        color: var(--purple-main);
-        border: 1px solid var(--purple-main);
-    }
-
-    .sort-group>.sort-btn--active {
-        background-color: var(--badge-purple-text);
-        color: var(--badge-purple-bg);
-        border: 1px solid var(--badge-purple-bg);
-    }
-
-    /* <!-- cheering詳細頁 --> */
-
-    .cheer-detail-img img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .cheer-detail-top {
-        display: flex;
-    }
-
-    .cheer-detail-info {
-        margin-left: 15px;
-    }
-
-    .cheer-detail-meta-list {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        margin-block: 10px;
-    }
-
-    .cheer-detail-meta-row {
-        display: flex;
-        gap: 20px;
-    }
-
-    .cheer-detail-meta-row>.meta-label {
-        flex-shrink: 0;
-        color: var(--text-muted);
-        font-size: 13px;
-    }
-
-    .cheer-detail-meta-row>.meta-value {
-        color: var(--text-primary);
-        font-size: 13px;
-    }
-
-    .capacity-bar-bg {
-        background-color: var(--border-color);
-        border-radius: 4px;
-        height: 6px;
-        margin-top: 5px;
-    }
-
-    .capacity-bar-fill {
-        background-color: var(--purple-main);
-        border-radius: 4px;
-        height: 6px;
-    }
-
-    .cheer-detail-desc {
-        margin-top: -15px;
-    }
-
-    .cheer-detail-desc>p {
-        margin-top: -8px;
-    }
-
-    /* < !--  地圖佔位 --> */
-    .form-section {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .cheer-map-placeholder>span {
-        width: 100%;
-        height: 200px;
-        background-color: var(--bg-page);
-        color: var(--text-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 2px dashed var(--border-color);
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
     /* < !-- 報名表單 --> */
-    .form-section>.section-header {
-        margin-bottom: -5px;
-    }
-
     .form-field {
         display: flex;
         flex-direction: column;
@@ -585,28 +246,6 @@
         border: 1px solid var(--badge-purple-bg);
     }
 
-    /* <!--  留言區 --> */
-    .form-section>.section-header {
-        margin-bottom: 5px;
-    }
-
-    .comment-contents {
-        margin-top: -5px;
-        color: var(--text-secondary);
-        font-size: 14px;
-    }
-
-    .comment-author {
-        font-size: 12px;
-        font-weight: 500;
-        color: var(--text-primary);
-    }
-
-    .comment-time {
-        font-size: 12px;
-        color: var(--text-muted);
-    }
-
     /* <!-- 周邊回報  --> */
     #merch-report-modal {
         /* max-width: 580px;
@@ -620,15 +259,6 @@
         overflow-y: auto;
         /*表單滾動 */
         padding: 40px 0;
-    }
-
-    .modal-box {
-        background-color: var(--bg-section);
-        color: var(--text-primary);
-        padding: 10px 50px;
-        border-radius: 10px;
-        width: 75%;
-        margin: auto;
     }
 
     .modal-header {
@@ -737,9 +367,21 @@
         align-items: center;
     }
 
-    .modal-footer {
+    .merch-sizes {
         display: flex;
-        justify-content: center;
-        gap: 100px;
-        margin-top: 20px;
+        align-items: center;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .review-card--compact .review-card__footer {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #lp-hero .badge {
+        background-color: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.6);
+        color: #ffffff;
     }

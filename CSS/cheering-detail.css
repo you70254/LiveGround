@@ -1,0 +1,109 @@
+/* cheering-detail.html 專屬樣式 */
+
+.cheer-detail-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cheer-detail-top {
+    display: flex;
+}
+
+.cheer-detail-info {
+    margin-left: 15px;
+}
+
+.cheer-detail-meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-block: 10px;
+}
+
+.cheer-detail-meta-row {
+    display: flex;
+    gap: 20px;
+}
+
+.cheer-detail-meta-row>.meta-label {
+    flex-shrink: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.cheer-detail-meta-row>.meta-value {
+    color: var(--text-primary);
+    font-size: 13px;
+}
+
+.capacity-bar-bg {
+    background-color: var(--border-color);
+    border-radius: 4px;
+    height: 6px;
+    margin-top: 5px;
+}
+
+.capacity-bar-fill {
+    background-color: var(--purple-main);
+    border-radius: 4px;
+    height: 6px;
+}
+
+.cheer-detail-desc {
+    margin-top: -15px;
+}
+
+.cheer-detail-desc>p {
+    margin-top: -8px;
+}
+
+.cheer-map-placeholder>span {
+    width: 100%;
+    height: 200px;
+    background-color: var(--bg-page);
+    color: var(--text-secondary);
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comment-author {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.comment-contents {
+    margin-top: -5px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section>.section-header {
+    margin-bottom: 5px;
+}
+
+.btn-submit {
+    background-color: var(--badge-purple-text);
+    color: var(--badge-purple-bg);
+    border: 1px solid var(--badge-purple-bg);
+    padding: 5px 13px;
+}
+
+.btn-submit:hover {
+    background-color: var(--bg-hover);
+    color: var(--purple-main);
+    border: 1px solid var(--purple-main);
+}

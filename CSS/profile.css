@@ -290,7 +290,6 @@ button>svg {
 
 /* <!-- 應援紀錄：已結束狀態，badge 系統目前沒有灰色版本，沿用既有 grey 變數新增一個 modifier --> */
 .badge--ended {
-    background-color: var(--badge-grey-bg);
     color: var(--badge-grey-text);
     border: 1px solid var(--badge-grey-text);
 }

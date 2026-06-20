@@ -109,7 +109,7 @@ h3 {
 .sidebar-artist-name,
 .sidebar-stat {
     text-align: center;
-    color: var(--text-primary)
+    color: var(--text-secondary)
 }
 
 .sidebar-artist-info>p,
@@ -293,7 +293,7 @@ h3 {
     flex-direction: column;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--border-color);
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 .lp-card__host {
@@ -363,15 +363,6 @@ h3 {
 }
 
 /* <!-- warn banner --> */
-.warn-banner {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    padding: 3px 7px;
-    margin: 10px;
-
-}
-
 .warn-link {
     position: relative;
 }
@@ -389,131 +380,10 @@ h3 {
 
 /* 轉讓票 */
 /* <!-- 安全交易提示 --> */
-.sidebar-safety {
-    border-bottom: 1px solid var(--border-color);
-    padding-block: 5px;
-}
-
-.sidebar-safety__title {
-    font-size: 13px;
-    color: var(--text-primary);
-    margin-bottom: 8px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.safety-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-left: 15px;
-}
-
-.safety-item {
-    display: flex;
-    gap: 6px;
-    font-size: 12px;
-    color: var(--text-secondary);
-}
-
-.safety-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.safety-item--ok {
-    color: var(--badge-green-text);
-}
-
-.safety-item--warn {
-    color: var(--badge-red-text);
-}
-
 .warn-banner>p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.warn-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* <!-- 場次票價參考 --> */
-.sidebar-price-ref {
-    padding-top: 5px;
-    margin-left: 15px;
-}
-
-.price-list {
-    margin-top: -10px;
-}
-
-.price-row {
-    display: flex;
-    justify-content: space-between;
-    padding-block: 6px;
-    font-size: 12px;
-    border-bottom: 1px solid var(--border-color);
-    color: var(--text-secondary);
-}
-
-.price-value {
-    font-weight: 500;
-}
-
-/* 篩選列 */
-.filter-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 10px 12px;
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-}
-
-.filter-group {
-    display: flex;
-    gap: 10px;
-}
-
-.filter-label {
-    font-size: 12px;
-    color: var(--text-muted);
-    width: 28px;
-}
-
-.filter-btns {
-    display: flex;
-    gap: 6px;
-}
-
-.filter-btn {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 12px;
-    padding: 2px 10px;
-    border-radius: 12px;
-    background-color: var(--bg-hover);
-    color: var(--text-secondary);
-    border: 1px solid var(--border-color);
-    cursor: pointer;
-}
-
-.filter-btn:hover:not(.filter-btn--active) {
-    border-color: var(--purple-main);
-    color: var(--purple-main);
-}
-
-.filter-btn--active {
-    background-color: var(--badge-purple-bg, #f0e6ff);
-    color: var(--badge-purple-text, #5b21b6);
-    border-color: var(--badge-purple-text, #5b21b6);
 }
 
 /* 展開後 */
@@ -524,39 +394,6 @@ details[open] .lp-card {
 
 details[open] summary {
     border-radius: 12px 12px 0 0;
-}
-
-.lp-contact__body {
-    padding: 10px 30px;
-    display: flex;
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-hover);
-    border-top: none;
-    border-radius: 0 0 12px 12px;
-    gap: 50px;
-    color: var(--text-secondary);
-    align-items: center;
-}
-
-.lp-contact__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.lp-contact__row {
-    display: flex;
-    gap: 12px;
-    font-size: 13px;
-}
-
-.lp-contact__row>.meta-label {
-    width: 55px;
-}
-
-.lp-contact__note {
-    font-size: 13px;
-    color: var(--text-secondary);
 }
 
 .ti {
@@ -613,13 +450,6 @@ details[open] summary {
     align-items: center;
 }
 
-.row2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    align-items: end;
-}
-
 .radio-group {
     display: flex;
     gap: 10px;
@@ -634,11 +464,6 @@ details[open] summary {
     align-self: flex-end;
     flex: 1;
     text-align: center;
-}
-
-.contact-group {
-    display: flex;
-    gap: 10px;
 }
 
 .radio-option {
@@ -659,13 +484,6 @@ label {
     font-weight: 500;
     color: var(--text-secondary);
     display: block;
-    margin-top: 10px;
-}
-
-.divider {
-    font-size: 12px;
-    color: var(--text-muted);
-    border-bottom: 1px solid var(--border-color);
     margin-top: 10px;
 }
 
@@ -762,22 +580,20 @@ label {
 
 /* 心得類型 badge */
 .badge--review-type {
-    background: #ede9fe;
-    color: #6d28d9;
-    margin-bottom: 8px;
-    display: inline-block;
+    color: var(--badge-purple-text);
+    border: 1px solid var(--badge-purple-text);
 }
 
 .badge--review-type-prep {
-    background: #fce7f3;
-    color: #be185d;
+    color: var(--badge-pink-text);
+    border: 1px solid var(--badge-pink-text);
 }
 
 /* 標題 */
 .review-card__title {
     font-size: 20px;
     font-weight: 500;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     margin-bottom: 8px;
     font-family: 'Space Grotesk', 'Noto Sans TC', sans-serif;
 }
@@ -816,9 +632,9 @@ label {
 }
 
 .review-img-single img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
 }
 
 /* 多張：縮圖陳列 */

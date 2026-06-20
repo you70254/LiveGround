@@ -167,6 +167,12 @@
 
     }
 
+    .btn-submit:hover {
+        background-color: var(--bg-hover);
+        color: var(--purple-main);
+        border: 1px solid var(--purple-main);
+    }
+
     .btn-cancel {
         font-size: 16px;
         border-radius: 20px;
