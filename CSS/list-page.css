@@ -760,7 +760,7 @@ section:not(#artist-hero):not(#lp-hero) {
 /* 三行問題 */
 @media (max-width: 1024px) {
     #lp-main {
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 3fr 7fr;
         width: 100%;
     }
 
@@ -772,7 +772,7 @@ section:not(#artist-hero):not(#lp-hero) {
 @media (max-width: 768px) {
     #lp-main {
         grid-template-columns: 1fr;
-        width: 100vw;
+        width: 100%;
     }
 }
 
@@ -780,7 +780,7 @@ section:not(#artist-hero):not(#lp-hero) {
 @media (max-width: 768px) {
     #lp-sidebar {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 2fr 3fr;
         gap: 12px;
         width: 100%;
     }

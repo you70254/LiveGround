@@ -25,3 +25,8 @@ initThemeToggle();
 
 // 觀察尺寸
 
+document.querySelectorAll('*').forEach(el => {
+    if (el.offsetWidth > document.documentElement.offsetWidth) {
+        console.log(el.className || el.tagName, el.offsetWidth);
+    }
+});

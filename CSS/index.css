@@ -378,7 +378,7 @@ button>svg {
 
 @media (max-width: 768px) {
     #LG_LATEST {
-        width: 100vw;
+        width: 100%;
         padding: 24px 16px;
     }
 }
