@@ -378,6 +378,18 @@ h3 {
     background-color: var(--badge-orange-text);
 }
 
+.warn-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 3px 7px;
+    margin: 10px;
+    background-color: var(--badge-orange-bg);
+    color: var(--badge-orange-text);
+    border: 1px solid var(--badge-orange-text);
+}
+
 /* 轉讓票 */
 /* <!-- 安全交易提示 --> */
 .warn-banner>p {
@@ -394,10 +406,6 @@ details[open] .lp-card {
 
 details[open] summary {
     border-radius: 12px 12px 0 0;
-}
-
-.ti {
-    font-size: 20px;
 }
 
 /* <!-- 發布公告  --> */
@@ -746,4 +754,98 @@ section:not(#artist-hero):not(#lp-hero) {
 .review-sort a {
     color: var(--text-muted);
     text-decoration: none;
+}
+
+/* RWD */
+/* 三行問題 */
+@media (max-width: 1024px) {
+    #lp-main {
+        grid-template-columns: 30% 70%;
+        width: 100%;
+    }
+
+    #ad {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #lp-main {
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+}
+
+/* 藝人圖片問題 */
+@media (max-width: 768px) {
+    #lp-sidebar {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .sidebar-artist-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sidebar-artist-img img {
+        width: 100%;
+    }
+
+    .sidebar-artist-info {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .sidebar-artist-info>p {
+        display: none;
+    }
+
+    .sidebar-tour-info {
+        border-bottom: 0px solid transparent;
+    }
+
+    .sidebar-right {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .sidebar-links,
+    .related-list,
+    .sidebar-stats,
+    #lp-sidebar>h3 {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    #lp-sidebar {
+        display: none;
+    }
+
+    #lp-hero {
+        width: 100%;
+        margin-top: 60px;
+        border-radius: 0;
+    }
+
+    .lp-hero-bg,
+    .lp-hero-overlay {
+        border-radius: 0;
+    }
+}
+
+/* 黃牛警告 */
+@media (max-width: 430px) {
+    .warn-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
 }

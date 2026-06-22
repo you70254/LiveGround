@@ -19,11 +19,19 @@
     <!-- NAV -->
     <nav id="LG_NAV">
         <a href="index.html" class="nav-logo">
-            <img src="img/logo-LiveGround.svg">
+            <img src="img/logo-LiveGround.svg" class="logo-desktop">
+            <img src="img/logo-LiveGround-2.svg" class="logo-mobile">
         </a>
         <div class="nav-links">
+            <div class="nav-theme-toggle">
+                <i class="ti ti-sun" aria-hidden="true"></i>
+                <div id="theme-toggle" role="switch" aria-checked="true" aria-label="切換深淺模式">
+                    <div class="toggle-knob"></div>
+                </div>
+                <i class="ti ti-moon" aria-hidden="true"></i>
+            </div>
             <div class="nav-line"></div>
-            <a href="#" class="nav-login">登入</a>
+            <a href="login.html" class="nav-login">登入</a>
         </div>
     </nav>
 
@@ -546,6 +554,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
         </svg></a>
     <script src="./vendors/jquery/code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="JS/utils.js"></script>
     <script src="JS/transfer.js"></script>
 </body>
 

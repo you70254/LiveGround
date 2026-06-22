@@ -16,7 +16,7 @@
     .artist-name,
     .artist-tour-name {
         margin-block: 10px;
-        color: var(--bg-page);
+        color: #f0eeff;
         font-family: var(--font-space);
     }
 
@@ -143,6 +143,10 @@
     .comment-likes img {
         width: 15px;
         height: 15px;
+    }
+
+    .read-more-link {
+        display: none;
     }
 
     /* <!-- 應援活動 --> */
@@ -384,4 +388,87 @@
         background-color: rgba(255, 255, 255, 0.15);
         border-color: rgba(255, 255, 255, 0.6);
         color: #ffffff;
+    }
+
+    /* 轉跳bar的問題 */
+    @media (max-width: 768px) {
+        #artist-tabs {
+            top: 40px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        #artist-tabs {
+            padding: 3px 4px;
+        }
+
+        .tab-item {
+            padding-inline: 8px;
+            font-size: 13px;
+        }
+
+        #artist-content {
+            width: 100vw;
+            min-width: 0;
+        }
+    }
+
+    /* 巡演場次 */
+    .date-br {
+        display: none;
+    }
+
+    @media (max-width: 430px) {
+
+        .venue-en {
+            display: none;
+        }
+
+        .date {
+            font-size: 14px;
+            width: 55px;
+        }
+
+        .date-year {
+            display: block;
+        }
+
+        .date-md {
+            display: block;
+        }
+
+        .date-br {
+            display: block;
+        }
+    }
+
+    /* 留言區 */
+    @media (max-width: 430px) {
+        .review-card--compact .review-card__body {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more-link {
+            display: inline-block;
+            font-size: 13px;
+            color: var(--purple-main);
+        }
+    }
+
+    /* 周邊區 */
+    @media (max-width: 430px) {
+        .merch-row {
+            flex-wrap: wrap;
+        }
+
+        .merch-name {
+            flex: 1;
+        }
+
+        .merch-sizes {
+            width: 100%;
+        }
     }

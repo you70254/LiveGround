@@ -19,9 +19,17 @@
     <!-- NAV -->
     <nav id="LG_NAV">
         <a href="index.html" class="nav-logo">
-            <img src="img/logo-LiveGround.svg">
+            <img src="img/logo-LiveGround.svg" class="logo-desktop">
+            <img src="img/logo-LiveGround-2.svg" class="logo-mobile">
         </a>
         <div class="nav-links">
+            <div class="nav-theme-toggle">
+                <i class="ti ti-sun" aria-hidden="true"></i>
+                <div id="theme-toggle" role="switch" aria-checked="true" aria-label="切換深淺模式">
+                    <div class="toggle-knob"></div>
+                </div>
+                <i class="ti ti-moon" aria-hidden="true"></i>
+            </div>
             <div class="nav-line"></div>
             <a href="login.html" class="nav-login">登入</a>
         </div>
@@ -58,34 +66,37 @@
                     多次完成亞洲及歐美巡迴演出。
                 </p>
             </div>
-            <div class="sidebar-stats">
-                <div class="sidebar-stat">
-                    <p class="sidebar-stat-value">12.4M</p>
-                    <p class="sidebar-stat-label">Spotify 月聽眾</p>
+            <div class="sidebar-right">
+                <div class="sidebar-stats">
+                    <div class="sidebar-stat">
+                        <p class="sidebar-stat-value">12.4M</p>
+                        <p class="sidebar-stat-label">Spotify 月聽眾</p>
+                    </div>
+                    <div class="sidebar-stat">
+                        <p class="sidebar-stat-value">230M</p>
+                        <p class="sidebar-stat-label">YouTube 點閱率</p>
+                    </div>
                 </div>
-                <div class="sidebar-stat">
-                    <p class="sidebar-stat-value">230M</p>
-                    <p class="sidebar-stat-label">YouTube 點閱率</p>
+                <div class="sidebar-tour-info">
+                    <h3>巡演介紹</h3>
+                    <p>ONE OK ROCK 已公布大型世界巡迴演唱會的詳細資訊，樂團將於今秋造訪東京、臺北、杜塞道夫、巴黎、倫敦、多倫多及洛杉磯的各大體育場與表演場館。
+                    </p>
+                    <p>ONE OK ROCK 的「2026 Premonition World Tour」將於 4 月 25、26 日在臺北的臺北大巨蛋。展開為期兩晚的演出。</p>
+                    <p>此次巡演將讓樂團登上職業生涯中規模最大的國際場館，並首度將其氣勢磅礡、製作精良的體育場級演出帶往歐洲與北美。日本及臺北場次的完整開售時程將於日後公布。
+                    </p>
                 </div>
-            </div>
-            <div class="sidebar-tour-info">
-                <h3>巡演介紹</h3>
-                <p>ONE OK ROCK 已公布大型世界巡迴演唱會的詳細資訊，樂團將於今秋造訪東京、臺北、杜塞道夫、巴黎、倫敦、多倫多及洛杉磯的各大體育場與表演場館。
-                </p>
-                <p>ONE OK ROCK 的「2026 Premonition World Tour」將於 4 月 25、26 日在臺北的臺北大巨蛋。展開為期兩晚的演出。</p>
-                <p>此次巡演將讓樂團登上職業生涯中規模最大的國際場館，並首度將其氣勢磅礡、製作精良的體育場級演出帶往歐洲與北美。日本及臺北場次的完整開售時程將於日後公布。
-                </p>
-            </div>
-            <div class="sidebar-links">
-                <a href="https://www.oneokrock.com/jp/" target="_blank" class="sidebar-link">
-                    <span>官方網站</span><span class="arrow">→</span>
-                </a>
-                <a href="https://www.youtube.com/@ONEOKROCK" target="_blank" class="sidebar-link">
-                    <span>YouTube</span><span class="arrow">→</span>
-                </a>
-                <a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" target="_blank" class="sidebar-link">
-                    <span>Spotify</span><span class="arrow">→</span>
-                </a>
+                <div class="sidebar-links">
+                    <a href="https://www.oneokrock.com/jp/" target="_blank" class="sidebar-link">
+                        <span>官方網站</span><span class="arrow">→</span>
+                    </a>
+                    <a href="https://www.youtube.com/@ONEOKROCK" target="_blank" class="sidebar-link">
+                        <span>YouTube</span><span class="arrow">→</span>
+                    </a>
+                    <a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" target="_blank"
+                        class="sidebar-link">
+                        <span>Spotify</span><span class="arrow">→</span>
+                    </a>
+                </div>
             </div>
             <!-- 相關藝人 -->
             <h3>相關藝人</h3>
@@ -134,8 +145,9 @@
                     <details>
                         <summary>
                             <div class="card">
-                                <p class="date">2026.04.25<br><span>(六)</span></p>
-                                <p class="venue">臺北大巨蛋 Taipei Dome <span>台灣 · 台北</span></p>
+                                <p class="date">2026.<br class="date-br">04.25<br><span>(六)</span></p>
+                                <p class="venue">臺北大巨蛋 <span class="venue-en">Taipei Dome</span> <span>台灣 · 台北</span>
+                                </p>
                                 <div class="right">
                                     <span class="badge badge--on-sale">#售票中</span><svg class="chevron"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -174,8 +186,9 @@
                     <details>
                         <summary>
                             <div class="card">
-                                <p class="date">2026.04.26<br><span>(日)</span></p>
-                                <p class="venue">臺北大巨蛋 Taipei Dome <span>台灣 · 台北</span></p>
+                                <p class="date">2026.<br class="date-br">04.26<br><span>(日)</span></p>
+                                <p class="venue">臺北大巨蛋 <span class="venue-en">Taipei Dome</span> <span>台灣 · 台北</span>
+                                </p>
                                 <div class="right">
                                     <span class="badge badge--sold">#已完售</span>
                                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -242,6 +255,7 @@
                         <p class="review-card__body">
                             不多文本確保大人面向，現場打電話提醒，告訴我，和我手術手術交流醫學慢慢聲音會議，比如好像改進，指數怪物作者模組還沒喜愛報紙執行環境課程，效果突出兩種老婆取消電腦加快習慣及其數字他人釣魚，體育損失地上。
                         </p>
+                        <a href="review.html" class="read-more-link">閱讀全文 →</a>
                         <div class="review-img-single">
                             <img src="https://picsum.photos/600/300/?random=30" alt="現場照片">
                         </div>
@@ -261,6 +275,7 @@
                             </div>
                         </div>
                         <p class="review-card__body">終於等到這場！DETOX 亞巡台北場一定要去，已經訂好機票了 ✈️ 有人要一起組團嗎？</p>
+                        <a href="review.html" class="read-more-link">閱讀全文 →</a>
                         <div class="review-card__footer">
                             <span><i class="ti ti-heart"></i> 24</span>
                         </div>
@@ -327,9 +342,9 @@
                 </div>
                 <div class="warn-banner">
                     <p><img src="img/warning-svgrepo-com.svg" class="color-icon warn-icon"> 本站嚴禁超過原價販售<img
-                            src="img/warning-svgrepo-com.svg" class="color-icon warn-icon">發現黃牛票</p>
-                    <a href="https://noscalper.moc.gov.tw/" target="_blank" class="warn-link">請向文化部檢舉<span
-                            class="arrow-right">→</span></a>
+                            src="img/warning-svgrepo-com.svg" class="color-icon warn-icon"></p>
+                    <p>發現黃牛票<a href="https://noscalper.moc.gov.tw/" target="_blank" class="warn-link">請向文化部檢舉<span
+                                class="arrow-right">→</span></a></p>
                 </div>
                 <div class=" list">
                     <div class="card">
@@ -446,6 +461,7 @@
         </div>
     </footer>
     <script src="./vendors/jquery/code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="JS/utils.js"></script>
     <script src="JS/artist.js"></script>
 </body>
 

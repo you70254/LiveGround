@@ -11,12 +11,12 @@ let maxScroll = track.scrollWidth - wrapper.offsetWidth;
 checkBtn();
 
 rightBtn.addEventListener('click', function () {
-    position -= (cardWidth * 3);
+    position -= (cardWidth);
     track.style.transform = `translateX(${position}px)`;
     checkBtn();
 })
 leftBtn.addEventListener('click', function () {
-    position += (cardWidth * 3);
+    position += (cardWidth);
     track.style.transform = `translateX(${position}px)`;
     checkBtn();
 });
