@@ -761,7 +761,7 @@ section:not(#artist-hero):not(#lp-hero) {
 @media (max-width: 1024px) {
     #lp-main {
         grid-template-columns: 3fr 7fr;
-        width: 100%;
+        width: 95%;
     }
 
     #ad {
@@ -772,7 +772,7 @@ section:not(#artist-hero):not(#lp-hero) {
 @media (max-width: 768px) {
     #lp-main {
         grid-template-columns: 1fr;
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -782,7 +782,7 @@ section:not(#artist-hero):not(#lp-hero) {
         display: grid;
         grid-template-columns: 2fr 3fr;
         gap: 12px;
-        width: 100%;
+        width: 95%;
     }
 
     .sidebar-artist-img {

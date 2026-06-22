@@ -395,6 +395,10 @@
         #artist-tabs {
             top: 40px;
         }
+
+        #artist-content {
+            min-width: 0;
+        }
     }
 
     @media (max-width: 430px) {
