@@ -205,6 +205,7 @@ h3 {
     flex-direction: column;
 }
 
+
 /* <!-- toolbar 篩選列 --> */
 .btn-new-cheer {
     font-size: 16px;
@@ -640,8 +641,10 @@ label {
 }
 
 .review-img-single img {
-    width: 400px;
-    height: 280px;
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    max-width: 400px;
     object-fit: cover;
 }
 
@@ -774,6 +777,11 @@ section:not(#artist-hero):not(#lp-hero) {
         grid-template-columns: 1fr;
         width: 95%;
     }
+
+    #lp-content,
+    #artist-content {
+        min-width: 0;
+    }
 }
 
 /* 藝人圖片問題 */
@@ -847,5 +855,33 @@ section:not(#artist-hero):not(#lp-hero) {
         flex-direction: column;
         text-align: center;
         gap: 4px;
+    }
+}
+
+@media (max-width: 430px) {
+    .tab-item {
+        padding-inline: 8px;
+        font-size: 13px;
+    }
+
+    .review-card--compact .review-card__body {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .read-more-link {
+        display: inline-block;
+        font-size: 13px;
+        color: var(--purple-main);
+    }
+}
+
+/* review cheering transfere共用頁 */
+@media (max-width: 1024px) {
+    #lp-content {
+        width: 95%;
+        margin-inline: auto;
     }
 }
