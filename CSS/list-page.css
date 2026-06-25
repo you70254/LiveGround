@@ -634,13 +634,9 @@ label {
     opacity: 0.75;
 }
 
-/* 附圖的話 */
-
 /* 一張：展開顯示 */
 .review-img-single {
     margin-bottom: 12px;
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 .review-img-single img {
@@ -648,7 +644,6 @@ label {
     height: auto;
     max-height: 280px;
     max-width: 400px;
-    object-fit: cover;
 }
 
 /* 多張：縮圖陳列 */
