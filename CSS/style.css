@@ -277,14 +277,6 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-.chevron {
-    /* border: 1px solid red; */
-    width: 20px;
-    height: 20px;
-    display: block;
-    align-self: center;
-}
-
 input[type="radio"] {
     accent-color: var(--purple-main);
 }

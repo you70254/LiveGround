@@ -253,6 +253,7 @@ h3 {
     border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
+    align-items: stretch;
 }
 
 .lp-card:hover {
@@ -277,6 +278,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    order: 1;
 }
 
 .lp-card__meta {
@@ -292,7 +294,7 @@ h3 {
 .lp-card__title {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5px;
+    padding-block: 5px;
     border-bottom: 1px solid var(--border-color);
     color: var(--text-secondary);
 }
@@ -309,6 +311,7 @@ h3 {
     margin-block: -4px;
     color: var(--text-secondary);
     font-size: 13px;
+    order: 2;
 }
 
 .lp-card__detail span {
@@ -808,7 +811,7 @@ section:not(#artist-hero):not(#lp-hero) {
     }
 
     .sidebar-artist-info>p {
-        display: none;
+        font-size: 14px;
     }
 
     .sidebar-tour-info {
@@ -829,6 +832,12 @@ section:not(#artist-hero):not(#lp-hero) {
     .sidebar-stats,
     #lp-sidebar>h3 {
         display: none;
+    }
+}
+
+@media (max-width:620px) {
+    .sidebar-tour-info {
+        font-size: 14px;
     }
 }
 
@@ -883,5 +892,86 @@ section:not(#artist-hero):not(#lp-hero) {
     #lp-content {
         width: 95%;
         margin-inline: auto;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .page-hero-content span {
+        display: block;
+    }
+
+}
+
+/* lp-card__meta共用改版頁 */
+
+@media (max-width: 800px) {
+    .meta-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meta-dot {
+        display: none;
+    }
+
+    .meta-artist {
+        margin-bottom: -3px;
+    }
+
+    .lp-card__meta {
+        height: auto;
+        align-items: center;
+    }
+
+    .badge-group {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 545px) {
+    .lp-card__meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meta-group {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+}
+
+/* 處理應援卡片 */
+@media (max-width: 768px) {
+
+    .lp-card__detail {
+        width: 100%;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 430px) {
+    .lp-card {
+        flex-direction: column;
+    }
+
+    .lp-card__img {
+        width: 100%;
+        height: 160px;
+        align-self: auto;
+    }
+
+    .lp-card__body {
+        width: 100%;
+    }
+
+    .lp-card__detail {
+        gap: 12px;
     }
 }

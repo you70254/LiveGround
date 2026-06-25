@@ -99,4 +99,19 @@
     margin-top: -10px;
 }
 
-/* ========== 字數提示 ========== */
+/* ========== 斷點 ========== */
+
+@media (max-width: 550px) {
+
+    .review-new-type-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review-new-type-group label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

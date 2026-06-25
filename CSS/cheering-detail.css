@@ -107,3 +107,31 @@
     color: var(--purple-main);
     border: 1px solid var(--purple-main);
 }
+
+@media (max-width: 690px) {
+    .cheer-detail-meta-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #lp-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 505px) {
+    .cheer-detail-top {
+        flex-direction: column;
+    }
+
+    .cheer-detail-info {
+        margin: 0;
+    }
+
+    .cheer-detail-meta-row {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

@@ -59,6 +59,8 @@
 .back {
     color: rgba(240, 238, 255, 0.75);
     font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 /* ========== MAIN 共用結構 ========== */
@@ -111,6 +113,15 @@
 .form-field {
     display: flex;
     flex-direction: column;
+}
+
+.checkbox-item {
+    background-color: var(--bg-section);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-right: 10px;
 }
 
 /* ========== 上傳區 ========== */
@@ -173,4 +184,30 @@
     border: 1px solid var(--badge-grey-text);
     display: inline-flex;
     align-items: center;
+}
+
+.ti-cloud-upload {
+    font-size: 40px;
+}
+
+@media (max-width: 550px) {
+    .hero-breadcrumb span {
+        display: block;
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+@media (max-width: 475px) {
+
+    .upload-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

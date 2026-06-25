@@ -23,6 +23,7 @@
 
 .filter-btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
 }
 
@@ -167,4 +168,16 @@
 
 .warn-banner--column {
     flex-direction: column;
+}
+
+@media (max-width: 650px) {
+
+    .sidebar-artist-info,
+    .sidebar-price-ref {
+        display: none;
+    }
+
+    .sidebar-safety {
+        border-bottom: 1px solid transparent;
+    }
 }

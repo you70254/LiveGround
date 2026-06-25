@@ -53,17 +53,6 @@
         border-radius: 0 0 20px 20px;
     }
 
-    /* <!-- 基本資訊 --> */
-
-    .checkbox-item {
-        background-color: var(--bg-section);
-        color: var(--text-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 2px 8px;
-        margin-right: 10px;
-    }
-
     /* <!--  活動資訊 --> */
 
     .end-time-row {
@@ -90,4 +79,26 @@
         color: var(--text-muted);
     }
 
-    /* JS處理或的問題 */
+    .end-time-slash {
+        display: none;
+    }
+
+    @media (max-width: 605px) {
+        .cheer-time {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 405px) {
+        .end-time-or {
+            display: none;
+        }
+
+        .end-time-slash {
+            display: block;
+            margin-inline: 5px;
+            color: var(--text-muted);
+        }
+    }
